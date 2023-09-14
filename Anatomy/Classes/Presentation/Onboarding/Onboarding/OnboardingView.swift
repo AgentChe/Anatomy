@@ -9,7 +9,7 @@ import UIKit
 
 final class OnboardingView: UIView {
     enum Step: Int {
-        case disclaimer, drugGuide, interactionChecker, symptomChecker
+        case disclaimer, drugGuide, symptomChecker
     }
     
     var didFinish: (() -> Void)?
@@ -19,7 +19,6 @@ final class OnboardingView: UIView {
         [
             ODisclaimerView(step: .disclaimer),
             ODrugGuideView(step: .drugGuide),
-            OInteractionCheckerView(step: .interactionChecker),
             OSymptomCheckerView(step: .symptomChecker)
         ]
     }()
@@ -77,7 +76,7 @@ private extension OnboardingView {
     func initialize() {
         contentViews
             .enumerated()
-            .forEach { [weak self] index, view in
+            .forEach { index, view in
                 view.frame.size = CGSize(width: UIScreen.main.bounds.width,
                                          height: UIScreen.main.bounds.height)
                 

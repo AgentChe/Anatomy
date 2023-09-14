@@ -27,8 +27,6 @@ final class HomeViewController: UIViewController {
         
         let output = viewModel.configure(input: .init(
             didTapSettings: mainView.settingsButton.rx.tap.asSignal(),
-            didTapDrugGuide: mainView.tableView.didTapDrugGuide,
-            didTapInteractionChecker: mainView.tableView.didTapInteractionChecker,
             didTapSymptomChecker: mainView.tableView.didTapSymptomChecker,
             didTapBookmark: mainView.tableView.didTapBookmark,
             didTapDisclaimer: mainView.disclaimerButton.rx.tap.asSignal())
@@ -77,19 +75,18 @@ private extension HomeViewController {
             let vc = SettingsViewController.make()
             present(vc, animated: true)
         case .drugGuide:
-            let vc = DrugsViewController.make()
-            navigationController?.pushViewController(vc, animated: true)
-        case .interactionChecker:
-            let vc = InteractionCheckerViewController.make()
-            present(vc, animated: true)
+//            let vc = DrugsViewController.make()
+//            navigationController?.pushViewController(vc, animated: true)
+            break // TODO
         case .symptomChecker:
             let vc = NavigationController(rootViewController: SCPersonalViewController.make())
             vc.modalPresentationStyle = .fullScreen
             present(vc, animated: true)
         case .bookmark:
-            let vc = NavigationController(rootViewController: BookmarkViewController.make())
-            vc.modalPresentationStyle = .fullScreen
-            present(vc, animated: true)
+//            let vc = NavigationController(rootViewController: BookmarkViewController.make())
+//            vc.modalPresentationStyle = .fullScreen
+//            present(vc, animated: true)
+            break // TODO
         case .disclaimer:
             let vc = DisclaimerViewController.make()
             present(vc, animated: true)

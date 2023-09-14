@@ -12,8 +12,6 @@ import RxCocoa
 final class HomeTableView: UITableView {
     lazy var elements = [HomeTableElement]()
     
-    private lazy var didTapDrugGuideTrigger = PublishRelay<Void>()
-    private lazy var didTapInteractionCheckerTrigger = PublishRelay<Void>()
     private lazy var didTapSymptomCheckerTrigger = PublishRelay<Void>()
     private lazy var didTapBookmarkTrigger = PublishRelay<Void>()
     
@@ -34,14 +32,6 @@ extension HomeTableView {
         self.elements = elements
         
         reloadData()
-    }
-    
-    var didTapDrugGuide: Signal<Void> {
-        didTapDrugGuideTrigger.asSignal()
-    }
-    
-    var didTapInteractionChecker: Signal<Void> {
-        didTapInteractionCheckerTrigger.asSignal()
     }
     
     var didTapSymptomChecker: Signal<Void> {
@@ -74,10 +64,6 @@ extension HomeTableView: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch elements[indexPath.row].block {
-        case .drugGuide:
-            didTapDrugGuideTrigger.accept(Void())
-        case .interactionChecker:
-            didTapInteractionCheckerTrigger.accept(Void())
         case .symptomChecker:
             didTapSymptomCheckerTrigger.accept(Void())
         case .bookmark:

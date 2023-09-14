@@ -60,8 +60,6 @@
 // MARK: Onboarding
 "Onboarding.DrugGuide.Title" = "Drug Guide";
 "Onboarding.DrugGuide.Text" = "Find comprehensive, up-to-date, and well-structured drug information – precautions, side effects, interactions, and more.";
-"Onboarding.InteractionChecker.Title" = "Interaction Checker";
-"Onboarding.InteractionChecker.Text" = "Analyze drug interactions to determine which potentially unsafe drug combinations are best avoided.";
 "Onboarding.SymptomChecker.Title" = "Symptom Checker";
 "Onboarding.SymptomChecker.Text" = "Determine a possible diagnosis and appropriate treatment by selecting symptoms and answering a few simple questions.";
 "Onboarding.Disclaimer.Placeholder" = "The information provided in the app MUST NOT be regarded as a replacement for a professional medical advice. Read more";
@@ -70,8 +68,6 @@
 "Home.Title" = "Medical Guides";
 "Home.DrugGuide.Title" = "Drug Guide";
 "Home.DrugGuide.Text" = "Find comprehensive, up-to-date, and well-structured drug information – precautions, side effects, interactions, and more.";
-"Home.InteractionChecker.Title" = "Interaction Checker";
-"Home.InteractionChecker.Text" = "Analyze drug interactions to determine which potentially unsafe drug combinations are best avoided.";
 "Home.SymptomChecker.Title" = "Symptom Checker";
 "Home.SymptomChecker.Text" = "Determine a possible diagnosis and appropriate treatment by selecting symptoms and answering a few simple questions.";
 "Home.Bookmark.Title" = "Bookmark";
@@ -91,17 +87,6 @@
 "SelectUnit.Title.MedicalStates" = "Medical States";
 "SelectUnit.Search.Placeholder" = "Enter to start";
 "SelectUnit.Empty" = "We can’t find\nanything";
-
-// MARK: InteractionChecker
-"InteractionChecker.Title" = "Interaction checker";
-"InteractionChecker.Drug.Number" = "Drug %i";
-"InteractionChecker.ChooseDrug" = "Choose drug";
-"InteractionChecker.Check" = "Check";
-"InteractionChecker.Disclaimer" = "The information provided in the app MUST NOT be\nregarded as a replacement for a professional medical\nadvice. Read more";
-"InteractionChecker.Minor" = "Minor";
-"InteractionChecker.MonitorClosely" = "Monitor Closely";
-"InteractionChecker.Serious" = "Serious";
-"InteractionChecker.DontUseTogether" = "Don't use together";
 
 // MARK: NoInteractionsFound
 "NoInteractionsFound.Title" = "No interactions found";
