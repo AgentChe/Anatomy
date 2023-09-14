@@ -1,0 +1,96 @@
+/api/anatomy/list
+{
+    "human_body": [
+        {
+            "id": 1,
+            "name": "Parts of human body",
+            "saved": false
+        },
+        {
+            "id": 2,
+            "name": "Regions of human body",
+            "saved": false
+        }
+    ],
+    "general_anatomy": [
+        {
+            "id": 3,
+            "name": "General terms",
+            "saved": false
+        },
+        {
+            "id": 4,
+            "name": "Reference planes",
+            "saved": false
+        }
+    ]
+}
+
+/api/anatomy/list/next
+
+-> {
+    "id": 1
+}
+
+// Поскольку гайды состоят в виде дерева, вариантов ответа может быть 2
+
+// Вариант с вложенным списком, content = 0
+// header - опционально
+<- {
+    "content": 0,
+    "header": {
+        "id": 5,
+        "image": "image_url",
+        "title": "Parts of human body",
+        "text": "The front of the human head is called the face. It includes several distinct areas, of which the main features are:",
+        "saved": false
+    },
+    "list": [
+        {
+            "id": 6,
+            "name": "Head",
+            "saved": false
+        },
+        {
+            "id": 7,
+            "name": "Trunk",
+            "saved": false
+        }
+    ]
+}
+// Вариант с вложенным контентом, content = 1
+<- {
+    "content": 1,
+    "id": 100,
+    "name": "Cranial cavity",
+    "saved": false,
+    "sections": [
+        {
+            "name": "Definition",
+            "blocks": [
+                {
+                    "type": 1,
+                    "text": "This combination product contains two medications: aspirin and omeprazole."
+                }
+            ]
+        },
+        {
+            "blocks": [
+                {
+                    "type": 0,
+                    "text": "image url"
+                }
+            ]
+        }
+    ]
+}
+
+/api/anatomy/save
+/api/anatomy/unsave
+
+-> {
+    "id": 1
+}
+
+
+// Ветки /drugs и /symptom_checker все так же 
