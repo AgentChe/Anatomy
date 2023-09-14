@@ -26,7 +26,7 @@ final class SCSymptomsView: UIView {
 // MARK: Private
 private extension SCSymptomsView {
     func initialize() {
-        backgroundColor = Appearance.secondary4
+        backgroundColor = Appearance.background
     }
 }
 

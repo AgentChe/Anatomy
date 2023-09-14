@@ -36,7 +36,7 @@ final class ODrugGuideView: OSlideView {
 // MARK: Private
 private extension ODrugGuideView {
     func initialize() {
-        backgroundColor = Appearance.secondary4
+        backgroundColor = Appearance.background
     }
 }
 
@@ -47,19 +47,19 @@ private extension ODrugGuideView {
             imageView.leadingAnchor.constraint(equalTo: leadingAnchor),
             imageView.trailingAnchor.constraint(equalTo: trailingAnchor),
             imageView.topAnchor.constraint(equalTo: topAnchor, constant: 44.scale),
-            imageView.heightAnchor.constraint(equalToConstant: ScreenSize.isIphoneXFamily ? 439.scale : 310.scale)
+            imageView.heightAnchor.constraint(equalToConstant: ScreenSize.isIphoneXFamily ? 450.scale : 321.scale)
         ])
         
         NSLayoutConstraint.activate([
             titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16.scale),
             titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16.scale),
-            titleLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 45.scale)
+            titleLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 23.scale)
         ])
         
         NSLayoutConstraint.activate([
             textLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16.scale),
             textLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16.scale),
-            textLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 12.scale)
+            textLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 8.scale)
         ])
         
         NSLayoutConstraint.activate([
@@ -83,7 +83,7 @@ private extension ODrugGuideView {
     func makeImageView() -> UIImageView {
         let view = UIImageView()
         view.contentMode = .scaleAspectFit
-        view.image = UIImage(named: "Onboarding.DrugGuide")
+        view.image = UIImage(named: "Onboarding.AnatomyGuide")
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         return view
@@ -96,7 +96,7 @@ private extension ODrugGuideView {
             .textAlignment(.left)
         
         let view = UILabel()
-        view.attributedText = "Onboarding.DrugGuide.Title".localized.attributed(with: attrs)
+        view.attributedText = "Onboarding.AnatomyGuide.Title".localized.attributed(with: attrs)
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         return view
@@ -111,7 +111,7 @@ private extension ODrugGuideView {
         
         let view = UILabel()
         view.numberOfLines = 0
-        view.attributedText = "Onboarding.DrugGuide.Text".localized.attributed(with: attrs)
+        view.attributedText = "Onboarding.AnatomyGuide.Text".localized.attributed(with: attrs)
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         return view

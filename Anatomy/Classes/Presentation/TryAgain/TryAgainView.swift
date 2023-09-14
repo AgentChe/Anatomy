@@ -54,10 +54,10 @@ private extension TryAgainView {
 private extension TryAgainView {
     func makeConstraints() {
         NSLayoutConstraint.activate([
-            imageView.widthAnchor.constraint(equalToConstant: 330.scale),
-            imageView.heightAnchor.constraint(equalToConstant: 172.scale),
+            imageView.widthAnchor.constraint(equalToConstant: 374.scale),
+            imageView.heightAnchor.constraint(equalToConstant: 240.scale),
             imageView.centerXAnchor.constraint(equalTo: centerXAnchor),
-            imageView.topAnchor.constraint(equalTo: topAnchor, constant: ScreenSize.isIphoneXFamily ? 140.scale : 30.scale)
+            imageView.topAnchor.constraint(equalTo: topAnchor, constant: 30.scale)
         ])
         
         NSLayoutConstraint.activate([
@@ -102,7 +102,7 @@ private extension TryAgainView {
     func makeTitleLabel() -> UILabel {
         let attrs = TextAttributes()
             .textColor(Appearance.black)
-            .font(Fonts.Avenir.bold(size: 25.scale))
+            .font(Fonts.Avenir.bold(size: 21.scale))
             .textAlignment(.center)
         
         let view = UILabel()
@@ -144,14 +144,14 @@ private extension TryAgainView {
     
     func makeContactButton() -> UIButton {
         let attrs = TextAttributes()
-            .textColor(Appearance.primary.withAlphaComponent(0.5))
-            .font(Fonts.Avenir.bold(size: 15.scale))
+            .textColor(Appearance.primary)
+            .font(Fonts.Avenir.regular(size: 15.scale))
         
         let view = UIButton()
         view.setAttributedTitle("TryAgain.Contact".localized.attributed(with: attrs), for: .normal)
-        view.layer.cornerRadius = 8.scale
-        view.layer.borderWidth = 2.scale
-        view.layer.borderColor = Appearance.primary.withAlphaComponent(0.5).cgColor
+        view.layer.cornerRadius = 10.scale
+        view.layer.borderWidth = 1.scale
+        view.layer.borderColor = Appearance.primary.cgColor
         view.backgroundColor = UIColor.clear
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)

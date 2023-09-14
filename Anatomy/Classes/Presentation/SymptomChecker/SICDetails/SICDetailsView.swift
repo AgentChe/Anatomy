@@ -40,7 +40,7 @@ extension SICDetailsView {
 // MARK: Private
 private extension SICDetailsView {
     func initialize() {
-        backgroundColor = Appearance.secondary4
+        backgroundColor = Appearance.background
     }
 }
 

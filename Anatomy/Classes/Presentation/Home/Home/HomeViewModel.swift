@@ -11,7 +11,7 @@ import RxCocoa
 final class HomeViewModel {
     enum Route {
         case settings
-        case drugGuide
+        case anatomyGuide
         case symptomChecker
         case bookmark
         case disclaimer
@@ -22,6 +22,7 @@ final class HomeViewModel {
 extension HomeViewModel {
     struct Input {
         let didTapSettings: Signal<Void>
+        let didTapAnatomyGuide: Signal<Void>
         let didTapSymptomChecker: Signal<Void>
         let didTapBookmark: Signal<Void>
         let didTapDisclaimer: Signal<Void>
@@ -45,6 +46,7 @@ private extension HomeViewModel {
     func makeElements() -> Driver<[HomeTableElement]> {
         .deferred {
             .just([
+                HomeTableElement(block: .anatomyGuide),
                 HomeTableElement(block: .symptomChecker),
                 HomeTableElement(block: .bookmark)
             ])
@@ -55,6 +57,7 @@ private extension HomeViewModel {
         Signal
             .merge(
                 input.didTapSettings.map { Route.settings },
+                input.didTapAnatomyGuide.map { Route.anatomyGuide },
                 input.didTapSymptomChecker.map { Route.symptomChecker },
                 input.didTapBookmark.map { Route.bookmark },
                 input.didTapDisclaimer.map { Route.disclaimer }

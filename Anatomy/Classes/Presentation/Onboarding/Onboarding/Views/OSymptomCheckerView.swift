@@ -36,7 +36,7 @@ final class OSymptomCheckerView: OSlideView {
 // MARK: Private
 private extension OSymptomCheckerView {
     func initialize() {
-        backgroundColor = Appearance.secondary4
+        backgroundColor = Appearance.background
     }
 }
 
@@ -47,19 +47,19 @@ private extension OSymptomCheckerView {
             imageView.leadingAnchor.constraint(equalTo: leadingAnchor),
             imageView.trailingAnchor.constraint(equalTo: trailingAnchor),
             imageView.topAnchor.constraint(equalTo: topAnchor, constant: 44.scale),
-            imageView.heightAnchor.constraint(equalToConstant: ScreenSize.isIphoneXFamily ? 439.scale : 310.scale)
+            imageView.heightAnchor.constraint(equalToConstant: ScreenSize.isIphoneXFamily ? 450.scale : 321.scale)
         ])
         
         NSLayoutConstraint.activate([
             titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16.scale),
             titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16.scale),
-            titleLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 45.scale)
+            titleLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 23.scale)
         ])
         
         NSLayoutConstraint.activate([
             textLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16.scale),
             textLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16.scale),
-            textLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 12.scale)
+            textLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 8.scale)
         ])
         
         NSLayoutConstraint.activate([

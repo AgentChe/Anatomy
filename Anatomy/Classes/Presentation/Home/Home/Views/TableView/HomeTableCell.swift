@@ -65,19 +65,19 @@ private extension HomeTableCell {
         
         NSLayoutConstraint.activate([
             iconView.widthAnchor.constraint(equalToConstant: 109.scale),
-            iconView.heightAnchor.constraint(equalToConstant: 178.scale),
-            iconView.leadingAnchor.constraint(equalTo: container.leadingAnchor),
+            iconView.heightAnchor.constraint(equalToConstant: 130.scale),
+            iconView.leadingAnchor.constraint(equalTo: container.leadingAnchor, constant: 16.scale),
             iconView.centerYAnchor.constraint(equalTo: container.centerYAnchor)
         ])
         
         NSLayoutConstraint.activate([
-            titleLabel.leadingAnchor.constraint(equalTo: container.leadingAnchor, constant: 113.scale),
+            titleLabel.leadingAnchor.constraint(equalTo: container.leadingAnchor, constant: 133.scale),
             titleLabel.trailingAnchor.constraint(equalTo: container.trailingAnchor, constant: -16.scale),
             titleLabel.topAnchor.constraint(equalTo: container.topAnchor, constant: 24.scale)
         ])
         
         NSLayoutConstraint.activate([
-            descriptionLabel.leadingAnchor.constraint(equalTo: container.leadingAnchor, constant: 113.scale),
+            descriptionLabel.leadingAnchor.constraint(equalTo: container.leadingAnchor, constant: 133.scale),
             descriptionLabel.trailingAnchor.constraint(equalTo: container.trailingAnchor, constant: -16.scale),
             descriptionLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 4.scale),
             descriptionLabel.bottomAnchor.constraint(equalTo: container.bottomAnchor, constant: -24.scale)

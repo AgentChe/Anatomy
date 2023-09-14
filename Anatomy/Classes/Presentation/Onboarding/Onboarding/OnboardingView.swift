@@ -25,8 +25,6 @@ final class OnboardingView: UIView {
     
     private var step = Step.disclaimer
     
-    private lazy var combineData = OnboardingCombineData()
-    
     private weak var vc: UIViewController?
     
     init(vc: UIViewController) {

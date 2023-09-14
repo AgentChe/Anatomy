@@ -24,7 +24,7 @@ final class GlobalDefinitions {
     static let contactUsUrl = "https://awesum-apps.com/contact"
     
     enum Paygate {
-        static let defaultLifetime = "medical.lifetime"
-        static let defaultMonthly = "medical.month"
+        static let defaultLifetime = "mobile.anatomy.lifetime"
+        static let defaultMonthly = "mobile.anatomy.monthly"
     }
 }

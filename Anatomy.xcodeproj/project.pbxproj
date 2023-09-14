@@ -188,10 +188,9 @@
 		DE3830482AB31A9500EA20E6 /* TryAgainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE382F432AB31A9500EA20E6 /* TryAgainViewController.swift */; };
 		DE3830492AB31A9500EA20E6 /* DisclaimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE382F462AB31A9500EA20E6 /* DisclaimerViewController.swift */; };
 		DE38304A2AB31A9500EA20E6 /* DisclaimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE382F472AB31A9500EA20E6 /* DisclaimerView.swift */; };
-		DE38304B2AB31A9500EA20E6 /* OCombineData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE382F4A2AB31A9500EA20E6 /* OCombineData.swift */; };
 		DE38304C2AB31A9500EA20E6 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE382F4B2AB31A9500EA20E6 /* OnboardingViewController.swift */; };
 		DE38304D2AB31A9500EA20E6 /* ODisclaimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE382F4D2AB31A9500EA20E6 /* ODisclaimerView.swift */; };
-		DE38304E2AB31A9500EA20E6 /* ODrugGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE382F4F2AB31A9500EA20E6 /* ODrugGuideView.swift */; };
+		DE38304E2AB31A9500EA20E6 /* OAnatomyGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE382F4F2AB31A9500EA20E6 /* OAnatomyGuideView.swift */; };
 		DE38304F2AB31A9500EA20E6 /* OSlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE382F502AB31A9500EA20E6 /* OSlideView.swift */; };
 		DE3830512AB31A9500EA20E6 /* OSymptomCheckerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE382F522AB31A9500EA20E6 /* OSymptomCheckerView.swift */; };
 		DE3830522AB31A9500EA20E6 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE382F532AB31A9500EA20E6 /* OnboardingView.swift */; };
@@ -390,10 +389,9 @@
 		DE382F432AB31A9500EA20E6 /* TryAgainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TryAgainViewController.swift; sourceTree = "<group>"; };
 		DE382F462AB31A9500EA20E6 /* DisclaimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisclaimerViewController.swift; sourceTree = "<group>"; };
 		DE382F472AB31A9500EA20E6 /* DisclaimerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisclaimerView.swift; sourceTree = "<group>"; };
-		DE382F4A2AB31A9500EA20E6 /* OCombineData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCombineData.swift; sourceTree = "<group>"; };
 		DE382F4B2AB31A9500EA20E6 /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		DE382F4D2AB31A9500EA20E6 /* ODisclaimerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODisclaimerView.swift; sourceTree = "<group>"; };
-		DE382F4F2AB31A9500EA20E6 /* ODrugGuideView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODrugGuideView.swift; sourceTree = "<group>"; };
+		DE382F4F2AB31A9500EA20E6 /* OAnatomyGuideView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAnatomyGuideView.swift; sourceTree = "<group>"; };
 		DE382F502AB31A9500EA20E6 /* OSlideView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSlideView.swift; sourceTree = "<group>"; };
 		DE382F522AB31A9500EA20E6 /* OSymptomCheckerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSymptomCheckerView.swift; sourceTree = "<group>"; };
 		DE382F532AB31A9500EA20E6 /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
@@ -893,9 +891,9 @@
 		DE382E9D2AB31A9500EA20E6 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				DE382EA02AB31A9500EA20E6 /* Views */,
 				DE382E9E2AB31A9500EA20E6 /* SettingsView.swift */,
 				DE382E9F2AB31A9500EA20E6 /* SettingsViewModel.swift */,
-				DE382EA02AB31A9500EA20E6 /* Views */,
 				DE382EA52AB31A9500EA20E6 /* SettingsViewController.swift */,
 			);
 			path = Settings;
@@ -951,8 +949,8 @@
 		DE382EAF2AB31A9500EA20E6 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
-				DE382EB02AB31A9500EA20E6 /* SplashViewController.swift */,
 				DE382EB12AB31A9500EA20E6 /* Utils */,
+				DE382EB02AB31A9500EA20E6 /* SplashViewController.swift */,
 				DE382EB42AB31A9500EA20E6 /* SplashViewModel.swift */,
 				DE382EB52AB31A9500EA20E6 /* SplashView.swift */,
 			);
@@ -971,13 +969,13 @@
 		DE382EC62AB31A9500EA20E6 /* Paygate */ = {
 			isa = PBXGroup;
 			children = (
-				DE382EC72AB31A9500EA20E6 /* PaygateViewModel.swift */,
+				DE382ECF2AB31A9500EA20E6 /* Views */,
 				DE382EC82AB31A9500EA20E6 /* Models */,
+				DE382EC72AB31A9500EA20E6 /* PaygateViewModel.swift */,
 				DE382ECB2AB31A9500EA20E6 /* PaygateViewControllerDelegate.swift */,
 				DE382ECC2AB31A9500EA20E6 /* PaygateInteractor.swift */,
 				DE382ECD2AB31A9500EA20E6 /* PaygateView.swift */,
 				DE382ECE2AB31A9500EA20E6 /* PaygateViewController.swift */,
-				DE382ECF2AB31A9500EA20E6 /* Views */,
 			);
 			path = Paygate;
 			sourceTree = "<group>";
@@ -1340,7 +1338,6 @@
 			isa = PBXGroup;
 			children = (
 				DE382F4C2AB31A9500EA20E6 /* Views */,
-				DE382F492AB31A9500EA20E6 /* Utils */,
 				DE382F4B2AB31A9500EA20E6 /* OnboardingViewController.swift */,
 				DE382F532AB31A9500EA20E6 /* OnboardingView.swift */,
 				DE382F542AB31A9500EA20E6 /* OnboardingViewModel.swift */,
@@ -1348,20 +1345,12 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
-		DE382F492AB31A9500EA20E6 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				DE382F4A2AB31A9500EA20E6 /* OCombineData.swift */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
 		DE382F4C2AB31A9500EA20E6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				DE382F4E2AB31A9500EA20E6 /* Atoms */,
 				DE382F4D2AB31A9500EA20E6 /* ODisclaimerView.swift */,
-				DE382F4F2AB31A9500EA20E6 /* ODrugGuideView.swift */,
+				DE382F4F2AB31A9500EA20E6 /* OAnatomyGuideView.swift */,
 				DE382F502AB31A9500EA20E6 /* OSlideView.swift */,
 				DE382F522AB31A9500EA20E6 /* OSymptomCheckerView.swift */,
 			);
@@ -1649,13 +1638,12 @@
 				DE3830462AB31A9500EA20E6 /* SCSymptomsTableView.swift in Sources */,
 				DE3830332AB31A9500EA20E6 /* DrugTagView.swift in Sources */,
 				DE382F792AB31A9500EA20E6 /* NetworkError.swift in Sources */,
-				DE38304B2AB31A9500EA20E6 /* OCombineData.swift in Sources */,
 				DE382FBB2AB31A9500EA20E6 /* IAPManager.swift in Sources */,
 				DE382FCA2AB31A9500EA20E6 /* GetSymptomMedsResponse.swift in Sources */,
 				DE382FFB2AB31A9500EA20E6 /* PaygateInteractor.swift in Sources */,
 				DE382FBE2AB31A9500EA20E6 /* IAPActionResult.swift in Sources */,
 				DE38303E2AB31A9500EA20E6 /* SCSymptomsView.swift in Sources */,
-				DE38304E2AB31A9500EA20E6 /* ODrugGuideView.swift in Sources */,
+				DE38304E2AB31A9500EA20E6 /* OAnatomyGuideView.swift in Sources */,
 				DE382FF82AB31A9500EA20E6 /* DefaultPaygate.swift in Sources */,
 				DE3830032AB31A9500EA20E6 /* SelectUnitTableCell.swift in Sources */,
 				DE3830512AB31A9500EA20E6 /* OSymptomCheckerView.swift in Sources */,
@@ -1854,8 +1842,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = AY43JM5PH6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Anatomy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1868,8 +1859,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = wed.Anatomy;
+				PRODUCT_BUNDLE_IDENTIFIER = app.books;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "BookSummaries Dev";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -1885,8 +1878,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = AY43JM5PH6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Anatomy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1899,8 +1895,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = wed.Anatomy;
+				PRODUCT_BUNDLE_IDENTIFIER = app.books;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "BookSummaries Dev";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;

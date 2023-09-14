@@ -26,7 +26,7 @@ final class SCConfirmView: UIView {
 // MARK: Private
 private extension SCConfirmView {
     func initialize() {
-        backgroundColor = Appearance.secondary4
+        backgroundColor = Appearance.background
     }
 }
 

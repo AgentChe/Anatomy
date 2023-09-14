@@ -32,9 +32,9 @@
 
 // MARK: Paygate
 "Paygate.Title" = "Get unlimited access";
-"Paygate.Cell1" = "Information on more than 10000 drugs";
-"Paygate.Cell2" = "Powerful Interaction Checker";
-"Paygate.Cell3" = "Extensive Symptom Checker";
+"Paygate.Cell1" = "More than 10,000 entries on General Anatomy and the Human Body";
+"Paygate.Cell2" = "Powerful Symptom Checker";
+"Paygate.Cell3" = "Organized Bookmarks";
 "Paygate.Secured" = "Secured by the App Store. Cancel anytime.";
 "Paygate.TermsOfUse" = "Terms of use";
 "Paygate.And" = "and";
@@ -58,20 +58,20 @@
 "Disclaimer.Text.Bold2" = "SHOULD BE ADVISED BY A QUALIFIED DOCTOR";
 
 // MARK: Onboarding
-"Onboarding.DrugGuide.Title" = "Drug Guide";
-"Onboarding.DrugGuide.Text" = "Find comprehensive, up-to-date, and well-structured drug information – precautions, side effects, interactions, and more.";
+"Onboarding.AnatomyGuide.Title" = "Anatomy Guide";
+"Onboarding.AnatomyGuide.Text" = "Discover a comprehensive visual reference with detailed illustrations and information about the structures and systems of the human body.";
 "Onboarding.SymptomChecker.Title" = "Symptom Checker";
-"Onboarding.SymptomChecker.Text" = "Determine a possible diagnosis and appropriate treatment by selecting symptoms and answering a few simple questions.";
+"Onboarding.SymptomChecker.Text" = "Identify a potential condition and recommend suitable treatment options by choosing symptoms and responding to a brief set of questions.";
 "Onboarding.Disclaimer.Placeholder" = "The information provided in the app MUST NOT be regarded as a replacement for a professional medical advice. Read more";
 
 // MARK: Home
-"Home.Title" = "Medical Guides";
-"Home.DrugGuide.Title" = "Drug Guide";
-"Home.DrugGuide.Text" = "Find comprehensive, up-to-date, and well-structured drug information – precautions, side effects, interactions, and more.";
+"Home.Title" = "Human Anatomy";
+"Home.AnatomyGuide.Title" = "Anatomy Guide";
+"Home.AnatomyGuide.Text" = "Get an extensive visual guide, offering illustrations and in-depth insights into the structure of the human body.";
 "Home.SymptomChecker.Title" = "Symptom Checker";
 "Home.SymptomChecker.Text" = "Determine a possible diagnosis and appropriate treatment by selecting symptoms and answering a few simple questions.";
 "Home.Bookmark.Title" = "Bookmark";
-"Home.Bookmark.Text" = "Save and get easy and fast access to selected medications, as well as interactions and symptoms.";
+"Home.Bookmark.Text" = "Effortlessly save and quickly access chosen terms, conditions, and symptoms.";
 "Home.Disclaimer" = "Disclaimer";
 
 // MARK: Settings

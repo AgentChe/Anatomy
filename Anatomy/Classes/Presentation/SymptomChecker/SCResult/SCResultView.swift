@@ -27,7 +27,7 @@ final class SCResultView: UIView {
 // MARK: Private
 private extension SCResultView {
     func initialize() {
-        backgroundColor = Appearance.secondary4
+        backgroundColor = Appearance.background
     }
 }
 

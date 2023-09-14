@@ -38,7 +38,7 @@ final class DisclaimerView: UIView {
 // MARK: Private
 private extension DisclaimerView {
     func initialize() {
-        backgroundColor = Appearance.secondary4
+        backgroundColor = Appearance.background
     }
 }
 
@@ -64,7 +64,7 @@ private extension DisclaimerView {
             titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16.scale),
             titleLabel.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 16.scale),
             titleLabel.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: -16.scale),
-            titleLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 20.scale)
+            titleLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 44.scale)
         ])
         
         NSLayoutConstraint.activate([
@@ -109,7 +109,7 @@ private extension DisclaimerView {
             .textColor(Appearance.black)
             .font(Fonts.Avenir.bold(size: 28.scale))
             .lineHeight(28.scale)
-            .textAlignment(.center)
+            .textAlignment(.left)
         
         let view = UILabel()
         view.attributedText = "Disclaimer.Title".localized.attributed(with: attrs)

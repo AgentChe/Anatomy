@@ -7,7 +7,7 @@
 
 struct HomeTableElement {
     enum Block {
-        case symptomChecker, bookmark
+        case anatomyGuide, symptomChecker, bookmark
     }
     
     let block: Block
@@ -19,6 +19,10 @@ struct HomeTableElement {
         self.block = block
         
         switch block {
+        case .anatomyGuide:
+            title = "Home.AnatomyGuide.Title".localized
+            text = "Home.AnatomyGuide.Text".localized
+            imageName = "Home.AnatomyGuide"
         case .symptomChecker:
             title = "Home.SymptomChecker.Title".localized
             text = "Home.SymptomChecker.Text".localized

@@ -42,7 +42,7 @@ extension SelectUnitView {
 // MARK: Private
 private extension SelectUnitView {
     func initialize() {
-        backgroundColor = Appearance.secondary4
+        backgroundColor = Appearance.background
     }
 }
 

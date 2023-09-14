@@ -42,7 +42,7 @@ extension SCPersonalView {
 // MARK: Private
 private extension SCPersonalView {
     func initialize() {
-        backgroundColor = Appearance.secondary4
+        backgroundColor = Appearance.background
     }
 }
 
