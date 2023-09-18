@@ -170,7 +170,7 @@ private extension AnatomyGuideNodeViewModel {
                 return self.observableRetrySingle
                     .retry(source: { source() },
                            trigger: { trigger(error: $0) })
-                    .trackActivity(activity)
+                    .trackActivity(self.activity)
                     .asDriver(onErrorDriveWith: .never())
             }
     }
