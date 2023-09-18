@@ -25,7 +25,7 @@ final class ODisclaimerView: OSlideView {
 // MARK: Private
 private extension ODisclaimerView {
     func initialize() {
-        backgroundColor = Appearance.secondary4
+        backgroundColor = Appearance.background
     }
 }
 

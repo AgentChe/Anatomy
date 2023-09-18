@@ -86,16 +86,12 @@
 "SelectUnit.Title.Symptoms" = "Symptoms";
 "SelectUnit.Title.MedicalStates" = "Medical States";
 "SelectUnit.Search.Placeholder" = "Enter to start";
-"SelectUnit.Empty" = "We can’t find\nanything";
+"SelectUnit.Empty" = "We can’t find anything";
 
 // MARK: NoInteractionsFound
 "NoInteractionsFound.Title" = "No interactions found";
 "NoInteractionsFound.SubTitle" = "There are no potentially unsafe interactions detected for these drugs.";
 "NoInteractionsFound.Disclaimer" = "The information provided in the app MUST NOT be\nregarded as a replacement for a professional medical\nadvice. Read more";
-
-// MARK: Drugs
-"Drugs.Title" = "Drug Guide";
-"Drugs.Search" = "Search";
 
 // MARK: SymptomChecker
 "SymptomChecker.Title" = "Symptom Checker";
@@ -149,3 +145,11 @@
 "Bookmark.Empty.Interactions.Text" = "Saved interactions will appear here";
 "Bookmark.Empty.Conditions.Title" = "Nothing here yet";
 "Bookmark.Empty.Conditions.Text" = "Saved conditions will appear here";
+
+// MARK: AnatomyGuide
+"AnatomyGuide.Title" = "Anatomy Guide";
+"AnatomyGuide.Filter.HumanBody" = "Human body";
+"AnatomyGuide.Filter.GeneralAnatomy" = "General Anatomy";
+
+// MARK: AGN
+"AGN.SeeMore" = "See more";

@@ -89,7 +89,7 @@
 /api/anatomy/unsave
 
 -> {
-    "id": 1
+    "ids": 1
 }
 
 

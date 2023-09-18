@@ -200,8 +200,42 @@
 		DE38306B2AB31AA200EA20E6 /* Avenir Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE3830652AB31AA200EA20E6 /* Avenir Black.ttf */; };
 		DE38306C2AB31AA200EA20E6 /* Avenir Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE3830662AB31AA200EA20E6 /* Avenir Regular.ttf */; };
 		DE38306D2AB31AA200EA20E6 /* Avenir Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE3830672AB31AA200EA20E6 /* Avenir Medium.ttf */; };
-		DE38306E2AB31AA200EA20E6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE3830682AB31AA200EA20E6 /* GoogleService-Info.plist */; };
 		DE3830702AB320DC00EA20E6 /* API.json in Resources */ = {isa = PBXBuildFile; fileRef = DE38306F2AB320DC00EA20E6 /* API.json */; };
+		DE3830742AB35A1E00EA20E6 /* AnatomyGuideNodeElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3830732AB35A1E00EA20E6 /* AnatomyGuideNodeElement.swift */; };
+		DE3830762AB35A5A00EA20E6 /* AnatomyGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3830752AB35A5A00EA20E6 /* AnatomyGuide.swift */; };
+		DE3830782AB35A8900EA20E6 /* AnatomyGuideHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3830772AB35A8900EA20E6 /* AnatomyGuideHeader.swift */; };
+		DE38307A2AB35CBF00EA20E6 /* AnatomyGuideContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3830792AB35CBF00EA20E6 /* AnatomyGuideContent.swift */; };
+		DE38307C2AB35D1900EA20E6 /* ContentBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38307B2AB35D1900EA20E6 /* ContentBlock.swift */; };
+		DE3830802AB35DE200EA20E6 /* AnatomyGuideNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38307F2AB35DE200EA20E6 /* AnatomyGuideNode.swift */; };
+		DE3830842AB35E7200EA20E6 /* GetAnatomyGuideRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3830832AB35E7200EA20E6 /* GetAnatomyGuideRequest.swift */; };
+		DE3830862AB35E7A00EA20E6 /* GetAnatomyGuideResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3830852AB35E7A00EA20E6 /* GetAnatomyGuideResponse.swift */; };
+		DE3830892AB35E9A00EA20E6 /* GetAnatomyGuideNodeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3830882AB35E9A00EA20E6 /* GetAnatomyGuideNodeRequest.swift */; };
+		DE38308B2AB35E9F00EA20E6 /* GetAnatomyGuideNodeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38308A2AB35E9F00EA20E6 /* GetAnatomyGuideNodeResponse.swift */; };
+		DE38308E2AB35EDE00EA20E6 /* SaveAnatomeGuideElementRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38308D2AB35EDE00EA20E6 /* SaveAnatomeGuideElementRequest.swift */; };
+		DE3830902AB35EFB00EA20E6 /* UnsaveAnatomeGuideElementRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38308F2AB35EFB00EA20E6 /* UnsaveAnatomeGuideElementRequest.swift */; };
+		DE3830922AB3642A00EA20E6 /* AnatomyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3830912AB3642A00EA20E6 /* AnatomyManager.swift */; };
+		DE3830942AB3643200EA20E6 /* AnatomyMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3830932AB3643200EA20E6 /* AnatomyMediator.swift */; };
+		DE3830982AB4660300EA20E6 /* AnatomyGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3830972AB4660300EA20E6 /* AnatomyGuideViewController.swift */; };
+		DE38309A2AB4660900EA20E6 /* AnatomyGuideViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3830992AB4660900EA20E6 /* AnatomyGuideViewModel.swift */; };
+		DE38309C2AB4660D00EA20E6 /* AnatomyGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38309B2AB4660D00EA20E6 /* AnatomyGuideView.swift */; };
+		DE3830A22AB46AD800EA20E6 /* AnatomyGuideTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3830A12AB46AD800EA20E6 /* AnatomyGuideTableView.swift */; };
+		DE3830A42AB46AF300EA20E6 /* AnatomyGuideTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3830A32AB46AF300EA20E6 /* AnatomyGuideTableCell.swift */; };
+		DE3830A72AB46E9500EA20E6 /* AnatomyGuideFilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3830A62AB46E9500EA20E6 /* AnatomyGuideFilterCell.swift */; };
+		DE3830A92AB46F3C00EA20E6 /* AnatomyGuideFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3830A82AB46F3C00EA20E6 /* AnatomyGuideFilterView.swift */; };
+		DE3830AB2AB47A5300EA20E6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE3830AA2AB47A5300EA20E6 /* GoogleService-Info.plist */; };
+		DE3830B12AB47F6E00EA20E6 /* AnatomyGuideNodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3830B02AB47F6E00EA20E6 /* AnatomyGuideNodeViewController.swift */; };
+		DE3830B32AB47F7400EA20E6 /* AnatomyGuideNodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3830B22AB47F7400EA20E6 /* AnatomyGuideNodeViewModel.swift */; };
+		DE3830B52AB47F7900EA20E6 /* AnatomyGuideNodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3830B42AB47F7900EA20E6 /* AnatomyGuideNodeView.swift */; };
+		DE3830B92AB489C100EA20E6 /* AnatomyGuideNodeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3830B82AB489C100EA20E6 /* AnatomyGuideNodeTableView.swift */; };
+		DE3830BB2AB489CE00EA20E6 /* AnatomyGuideNodeTableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3830BA2AB489CE00EA20E6 /* AnatomyGuideNodeTableElement.swift */; };
+		DE3830BD2AB4922D00EA20E6 /* AnatomyGuideFilterElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3830BC2AB4922D00EA20E6 /* AnatomyGuideFilterElement.swift */; };
+		DE3830C02AB49D5F00EA20E6 /* AGNElementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3830BF2AB49D5F00EA20E6 /* AGNElementCell.swift */; };
+		DE3830C22AB4A03E00EA20E6 /* AGNHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3830C12AB4A03E00EA20E6 /* AGNHeaderCell.swift */; };
+		DE3830C42AB4A09700EA20E6 /* AGNTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3830C32AB4A09700EA20E6 /* AGNTitleCell.swift */; };
+		DE53D5E52AB85DCE007FA841 /* AGNImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53D5E42AB85DCE007FA841 /* AGNImageCell.swift */; };
+		DE53D5E92AB85E36007FA841 /* AGNTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53D5E82AB85E36007FA841 /* AGNTextCell.swift */; };
+		DE53D5EC2AB86D52007FA841 /* GetAnatomyBookmarksRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53D5EB2AB86D52007FA841 /* GetAnatomyBookmarksRequest.swift */; };
+		DE53D5F02AB86DD1007FA841 /* GetAnatomyBookmarksResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53D5EF2AB86DD1007FA841 /* GetAnatomyBookmarksResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -401,8 +435,42 @@
 		DE3830652AB31AA200EA20E6 /* Avenir Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Avenir Black.ttf"; sourceTree = "<group>"; };
 		DE3830662AB31AA200EA20E6 /* Avenir Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Avenir Regular.ttf"; sourceTree = "<group>"; };
 		DE3830672AB31AA200EA20E6 /* Avenir Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Avenir Medium.ttf"; sourceTree = "<group>"; };
-		DE3830682AB31AA200EA20E6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DE38306F2AB320DC00EA20E6 /* API.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = API.json; sourceTree = "<group>"; };
+		DE3830732AB35A1E00EA20E6 /* AnatomyGuideNodeElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnatomyGuideNodeElement.swift; sourceTree = "<group>"; };
+		DE3830752AB35A5A00EA20E6 /* AnatomyGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnatomyGuide.swift; sourceTree = "<group>"; };
+		DE3830772AB35A8900EA20E6 /* AnatomyGuideHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnatomyGuideHeader.swift; sourceTree = "<group>"; };
+		DE3830792AB35CBF00EA20E6 /* AnatomyGuideContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnatomyGuideContent.swift; sourceTree = "<group>"; };
+		DE38307B2AB35D1900EA20E6 /* ContentBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentBlock.swift; sourceTree = "<group>"; };
+		DE38307F2AB35DE200EA20E6 /* AnatomyGuideNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnatomyGuideNode.swift; sourceTree = "<group>"; };
+		DE3830832AB35E7200EA20E6 /* GetAnatomyGuideRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAnatomyGuideRequest.swift; sourceTree = "<group>"; };
+		DE3830852AB35E7A00EA20E6 /* GetAnatomyGuideResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAnatomyGuideResponse.swift; sourceTree = "<group>"; };
+		DE3830882AB35E9A00EA20E6 /* GetAnatomyGuideNodeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAnatomyGuideNodeRequest.swift; sourceTree = "<group>"; };
+		DE38308A2AB35E9F00EA20E6 /* GetAnatomyGuideNodeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAnatomyGuideNodeResponse.swift; sourceTree = "<group>"; };
+		DE38308D2AB35EDE00EA20E6 /* SaveAnatomeGuideElementRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveAnatomeGuideElementRequest.swift; sourceTree = "<group>"; };
+		DE38308F2AB35EFB00EA20E6 /* UnsaveAnatomeGuideElementRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsaveAnatomeGuideElementRequest.swift; sourceTree = "<group>"; };
+		DE3830912AB3642A00EA20E6 /* AnatomyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnatomyManager.swift; sourceTree = "<group>"; };
+		DE3830932AB3643200EA20E6 /* AnatomyMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnatomyMediator.swift; sourceTree = "<group>"; };
+		DE3830972AB4660300EA20E6 /* AnatomyGuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnatomyGuideViewController.swift; sourceTree = "<group>"; };
+		DE3830992AB4660900EA20E6 /* AnatomyGuideViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnatomyGuideViewModel.swift; sourceTree = "<group>"; };
+		DE38309B2AB4660D00EA20E6 /* AnatomyGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnatomyGuideView.swift; sourceTree = "<group>"; };
+		DE3830A12AB46AD800EA20E6 /* AnatomyGuideTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnatomyGuideTableView.swift; sourceTree = "<group>"; };
+		DE3830A32AB46AF300EA20E6 /* AnatomyGuideTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnatomyGuideTableCell.swift; sourceTree = "<group>"; };
+		DE3830A62AB46E9500EA20E6 /* AnatomyGuideFilterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnatomyGuideFilterCell.swift; sourceTree = "<group>"; };
+		DE3830A82AB46F3C00EA20E6 /* AnatomyGuideFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnatomyGuideFilterView.swift; sourceTree = "<group>"; };
+		DE3830AA2AB47A5300EA20E6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DE3830B02AB47F6E00EA20E6 /* AnatomyGuideNodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnatomyGuideNodeViewController.swift; sourceTree = "<group>"; };
+		DE3830B22AB47F7400EA20E6 /* AnatomyGuideNodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnatomyGuideNodeViewModel.swift; sourceTree = "<group>"; };
+		DE3830B42AB47F7900EA20E6 /* AnatomyGuideNodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnatomyGuideNodeView.swift; sourceTree = "<group>"; };
+		DE3830B82AB489C100EA20E6 /* AnatomyGuideNodeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnatomyGuideNodeTableView.swift; sourceTree = "<group>"; };
+		DE3830BA2AB489CE00EA20E6 /* AnatomyGuideNodeTableElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnatomyGuideNodeTableElement.swift; sourceTree = "<group>"; };
+		DE3830BC2AB4922D00EA20E6 /* AnatomyGuideFilterElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnatomyGuideFilterElement.swift; sourceTree = "<group>"; };
+		DE3830BF2AB49D5F00EA20E6 /* AGNElementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AGNElementCell.swift; sourceTree = "<group>"; };
+		DE3830C12AB4A03E00EA20E6 /* AGNHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AGNHeaderCell.swift; sourceTree = "<group>"; };
+		DE3830C32AB4A09700EA20E6 /* AGNTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AGNTitleCell.swift; sourceTree = "<group>"; };
+		DE53D5E42AB85DCE007FA841 /* AGNImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AGNImageCell.swift; sourceTree = "<group>"; };
+		DE53D5E82AB85E36007FA841 /* AGNTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AGNTextCell.swift; sourceTree = "<group>"; };
+		DE53D5EB2AB86D52007FA841 /* GetAnatomyBookmarksRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAnatomyBookmarksRequest.swift; sourceTree = "<group>"; };
+		DE53D5EF2AB86DD1007FA841 /* GetAnatomyBookmarksResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAnatomyBookmarksResponse.swift; sourceTree = "<group>"; };
 		FA1F2D9097EE9C490E9C7499 /* Pods-Anatomy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anatomy.release.xcconfig"; path = "Target Support Files/Pods-Anatomy/Pods-Anatomy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -468,7 +536,7 @@
 				DE3830622AB31AA200EA20E6 /* Fonts */,
 				DE38305F2AB31AA200EA20E6 /* Strings */,
 				DE382DED2AB319A600EA20E6 /* Info.plist */,
-				DE3830682AB31AA200EA20E6 /* GoogleService-Info.plist */,
+				DE3830AA2AB47A5300EA20E6 /* GoogleService-Info.plist */,
 				DE382DEA2AB319A600EA20E6 /* LaunchScreen.storyboard */,
 				DE382DE82AB319A600EA20E6 /* Assets.xcassets */,
 				DE38306F2AB320DC00EA20E6 /* API.json */,
@@ -631,6 +699,7 @@
 		DE382E302AB31A9500EA20E6 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				DE3830712AB359C000EA20E6 /* Anatomy */,
 				DE382E552AB31A9500EA20E6 /* Paygate */,
 				DE382E5F2AB31A9500EA20E6 /* Profile */,
 				DE382E6B2AB31A9500EA20E6 /* Purchase */,
@@ -749,9 +818,9 @@
 		DE382E752AB31A9500EA20E6 /* Symptoms */ = {
 			isa = PBXGroup;
 			children = (
-				DE382E762AB31A9500EA20E6 /* SymptomsManager.swift */,
-				DE382E772AB31A9500EA20E6 /* Model */,
 				DE382E7F2AB31A9500EA20E6 /* Request */,
+				DE382E772AB31A9500EA20E6 /* Model */,
+				DE382E762AB31A9500EA20E6 /* SymptomsManager.swift */,
 				DE382E952AB31A9500EA20E6 /* SymptomsMediator.swift */,
 			);
 			path = Symptoms;
@@ -868,6 +937,7 @@
 		DE382E9B2AB31A9500EA20E6 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				DE3830952AB465EF00EA20E6 /* AnatomyGuide */,
 				DE382E9C2AB31A9500EA20E6 /* Home */,
 				DE382EAF2AB31A9500EA20E6 /* Splash */,
 				DE382EC62AB31A9500EA20E6 /* Paygate */,
@@ -1391,6 +1461,174 @@
 			path = Avenir;
 			sourceTree = "<group>";
 		};
+		DE3830712AB359C000EA20E6 /* Anatomy */ = {
+			isa = PBXGroup;
+			children = (
+				DE3830812AB35E3200EA20E6 /* Requests */,
+				DE3830722AB359CC00EA20E6 /* Models */,
+				DE3830912AB3642A00EA20E6 /* AnatomyManager.swift */,
+				DE3830932AB3643200EA20E6 /* AnatomyMediator.swift */,
+			);
+			path = Anatomy;
+			sourceTree = "<group>";
+		};
+		DE3830722AB359CC00EA20E6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DE3830732AB35A1E00EA20E6 /* AnatomyGuideNodeElement.swift */,
+				DE3830752AB35A5A00EA20E6 /* AnatomyGuide.swift */,
+				DE3830772AB35A8900EA20E6 /* AnatomyGuideHeader.swift */,
+				DE3830792AB35CBF00EA20E6 /* AnatomyGuideContent.swift */,
+				DE38307B2AB35D1900EA20E6 /* ContentBlock.swift */,
+				DE38307F2AB35DE200EA20E6 /* AnatomyGuideNode.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DE3830812AB35E3200EA20E6 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				DE53D5EA2AB86D3E007FA841 /* GetAnatomyBookmarks */,
+				DE38308C2AB35EC000EA20E6 /* SaveUnsave */,
+				DE3830872AB35E8300EA20E6 /* GetAnatomyGuideNode */,
+				DE3830822AB35E5A00EA20E6 /* GetAnatomyGuide */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		DE3830822AB35E5A00EA20E6 /* GetAnatomyGuide */ = {
+			isa = PBXGroup;
+			children = (
+				DE3830832AB35E7200EA20E6 /* GetAnatomyGuideRequest.swift */,
+				DE3830852AB35E7A00EA20E6 /* GetAnatomyGuideResponse.swift */,
+			);
+			path = GetAnatomyGuide;
+			sourceTree = "<group>";
+		};
+		DE3830872AB35E8300EA20E6 /* GetAnatomyGuideNode */ = {
+			isa = PBXGroup;
+			children = (
+				DE3830882AB35E9A00EA20E6 /* GetAnatomyGuideNodeRequest.swift */,
+				DE38308A2AB35E9F00EA20E6 /* GetAnatomyGuideNodeResponse.swift */,
+			);
+			path = GetAnatomyGuideNode;
+			sourceTree = "<group>";
+		};
+		DE38308C2AB35EC000EA20E6 /* SaveUnsave */ = {
+			isa = PBXGroup;
+			children = (
+				DE38308D2AB35EDE00EA20E6 /* SaveAnatomeGuideElementRequest.swift */,
+				DE38308F2AB35EFB00EA20E6 /* UnsaveAnatomeGuideElementRequest.swift */,
+			);
+			path = SaveUnsave;
+			sourceTree = "<group>";
+		};
+		DE3830952AB465EF00EA20E6 /* AnatomyGuide */ = {
+			isa = PBXGroup;
+			children = (
+				DE3830AF2AB47F5E00EA20E6 /* AnatomyGuideNode */,
+				DE3830962AB465F800EA20E6 /* AnatomyGuide */,
+			);
+			path = AnatomyGuide;
+			sourceTree = "<group>";
+		};
+		DE3830962AB465F800EA20E6 /* AnatomyGuide */ = {
+			isa = PBXGroup;
+			children = (
+				DE38309D2AB467D100EA20E6 /* Views */,
+				DE3830972AB4660300EA20E6 /* AnatomyGuideViewController.swift */,
+				DE3830992AB4660900EA20E6 /* AnatomyGuideViewModel.swift */,
+				DE38309B2AB4660D00EA20E6 /* AnatomyGuideView.swift */,
+			);
+			path = AnatomyGuide;
+			sourceTree = "<group>";
+		};
+		DE38309D2AB467D100EA20E6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE3830A52AB46D8E00EA20E6 /* Filter */,
+				DE3830A02AB46ACC00EA20E6 /* TableView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DE3830A02AB46ACC00EA20E6 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				DE3830AC2AB47C6400EA20E6 /* Cells */,
+				DE3830A12AB46AD800EA20E6 /* AnatomyGuideTableView.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		DE3830A52AB46D8E00EA20E6 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				DE3830A62AB46E9500EA20E6 /* AnatomyGuideFilterCell.swift */,
+				DE3830A82AB46F3C00EA20E6 /* AnatomyGuideFilterView.swift */,
+				DE3830BC2AB4922D00EA20E6 /* AnatomyGuideFilterElement.swift */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
+		DE3830AC2AB47C6400EA20E6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DE3830A32AB46AF300EA20E6 /* AnatomyGuideTableCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DE3830AF2AB47F5E00EA20E6 /* AnatomyGuideNode */ = {
+			isa = PBXGroup;
+			children = (
+				DE3830B62AB489AA00EA20E6 /* Views */,
+				DE3830B02AB47F6E00EA20E6 /* AnatomyGuideNodeViewController.swift */,
+				DE3830B22AB47F7400EA20E6 /* AnatomyGuideNodeViewModel.swift */,
+				DE3830B42AB47F7900EA20E6 /* AnatomyGuideNodeView.swift */,
+			);
+			path = AnatomyGuideNode;
+			sourceTree = "<group>";
+		};
+		DE3830B62AB489AA00EA20E6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE3830B72AB489AF00EA20E6 /* TableView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DE3830B72AB489AF00EA20E6 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				DE3830BE2AB49CFD00EA20E6 /* Cells */,
+				DE3830B82AB489C100EA20E6 /* AnatomyGuideNodeTableView.swift */,
+				DE3830BA2AB489CE00EA20E6 /* AnatomyGuideNodeTableElement.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		DE3830BE2AB49CFD00EA20E6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DE3830BF2AB49D5F00EA20E6 /* AGNElementCell.swift */,
+				DE3830C12AB4A03E00EA20E6 /* AGNHeaderCell.swift */,
+				DE3830C32AB4A09700EA20E6 /* AGNTitleCell.swift */,
+				DE53D5E42AB85DCE007FA841 /* AGNImageCell.swift */,
+				DE53D5E82AB85E36007FA841 /* AGNTextCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DE53D5EA2AB86D3E007FA841 /* GetAnatomyBookmarks */ = {
+			isa = PBXGroup;
+			children = (
+				DE53D5EB2AB86D52007FA841 /* GetAnatomyBookmarksRequest.swift */,
+				DE53D5EF2AB86DD1007FA841 /* GetAnatomyBookmarksResponse.swift */,
+			);
+			path = GetAnatomyBookmarks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1453,7 +1691,7 @@
 			files = (
 				DE3830702AB320DC00EA20E6 /* API.json in Resources */,
 				DE38306A2AB31AA200EA20E6 /* Avenir Next LT Pro Bold.otf in Resources */,
-				DE38306E2AB31AA200EA20E6 /* GoogleService-Info.plist in Resources */,
+				DE3830AB2AB47A5300EA20E6 /* GoogleService-Info.plist in Resources */,
 				DE382DEC2AB319A600EA20E6 /* LaunchScreen.storyboard in Resources */,
 				DE3830692AB31AA200EA20E6 /* Localizable.strings in Resources */,
 				DE38306D2AB31AA200EA20E6 /* Avenir Medium.ttf in Resources */,
@@ -1515,6 +1753,7 @@
 				DE382FC12AB31A9500EA20E6 /* IAPErrorHelper.swift in Sources */,
 				DE382F912AB31A9500EA20E6 /* AmplitudeManager.swift in Sources */,
 				DE382F822AB31A9500EA20E6 /* TapAreaButton.swift in Sources */,
+				DE3830BD2AB4922D00EA20E6 /* AnatomyGuideFilterElement.swift in Sources */,
 				DE382FE52AB31A9500EA20E6 /* HomeTableView.swift in Sources */,
 				DE382FB32AB31A9500EA20E6 /* ProfileManager.swift in Sources */,
 				DE382F672AB31A9500EA20E6 /* UIColor+Extension.swift in Sources */,
@@ -1522,9 +1761,11 @@
 				DE3830352AB31A9500EA20E6 /* PregnantView.swift in Sources */,
 				DE3830192AB31A9500EA20E6 /* SCResultViewModel.swift in Sources */,
 				DE382F7C2AB31A9500EA20E6 /* RequestReview.swift in Sources */,
+				DE3830B32AB47F7400EA20E6 /* AnatomyGuideNodeViewModel.swift in Sources */,
 				DE3830182AB31A9500EA20E6 /* SCResultViewController.swift in Sources */,
 				DE382F7D2AB31A9500EA20E6 /* ImagePicker.swift in Sources */,
 				DE3830202AB31A9500EA20E6 /* SCPersonalViewController.swift in Sources */,
+				DE3830A92AB46F3C00EA20E6 /* AnatomyGuideFilterView.swift in Sources */,
 				DE382FEA2AB31A9500EA20E6 /* SplashViewModel.swift in Sources */,
 				DE382FBA2AB31A9500EA20E6 /* ProfileMediator.swift in Sources */,
 				DE382F8A2AB31A9500EA20E6 /* PushNotificationsManager.swift in Sources */,
@@ -1536,13 +1777,17 @@
 				DE382FAE2AB31A9500EA20E6 /* PaygateOptionConfig.swift in Sources */,
 				DE3830302AB31A9500EA20E6 /* SCConfirmViewModel.swift in Sources */,
 				DE382FC92AB31A9500EA20E6 /* SymptomMed.swift in Sources */,
+				DE3830A22AB46AD800EA20E6 /* AnatomyGuideTableView.swift in Sources */,
 				DE382F6B2AB31A9500EA20E6 /* String+Extension.swift in Sources */,
+				DE3830B12AB47F6E00EA20E6 /* AnatomyGuideNodeViewController.swift in Sources */,
 				DE38302F2AB31A9500EA20E6 /* SCConfirmView.swift in Sources */,
 				DE382FB62AB31A9500EA20E6 /* GetProfileResponse.swift in Sources */,
+				DE3830762AB35A5A00EA20E6 /* AnatomyGuide.swift in Sources */,
 				DE382F7E2AB31A9500EA20E6 /* RxActivityIndicator.swift in Sources */,
 				DE382FB22AB31A9500EA20E6 /* PaygateManager.swift in Sources */,
 				DE382FD42AB31A9500EA20E6 /* GetMedicalStatesRequest.swift in Sources */,
 				DE382FF72AB31A9500EA20E6 /* PaygateViewModel.swift in Sources */,
+				DE3830BB2AB489CE00EA20E6 /* AnatomyGuideNodeTableElement.swift in Sources */,
 				DE38302E2AB31A9500EA20E6 /* SICDetailsFilterButton.swift in Sources */,
 				DE3830022AB31A9500EA20E6 /* SelectUnitTableElement.swift in Sources */,
 				DE3830322AB31A9500EA20E6 /* DrugTagsView.swift in Sources */,
@@ -1557,8 +1802,10 @@
 				DE382FE62AB31A9500EA20E6 /* HomeTableCell.swift in Sources */,
 				DE382FF92AB31A9500EA20E6 /* PaygateOptionInfo.swift in Sources */,
 				DE382F6F2AB31A9500EA20E6 /* APIRequestBody.swift in Sources */,
+				DE53D5E52AB85DCE007FA841 /* AGNImageCell.swift in Sources */,
 				DE3830492AB31A9500EA20E6 /* DisclaimerViewController.swift in Sources */,
 				DE3830272AB31A9500EA20E6 /* SICDetailsViewController.swift in Sources */,
+				DE53D5E92AB85E36007FA841 /* AGNTextCell.swift in Sources */,
 				DE382F682AB31A9500EA20E6 /* Date+Extension.swift in Sources */,
 				DE3830312AB31A9500EA20E6 /* SCConfirmDrugsCell.swift in Sources */,
 				DE3830402AB31A9500EA20E6 /* SCSymptomsSelectCell.swift in Sources */,
@@ -1566,12 +1813,15 @@
 				DE382F7B2AB31A9500EA20E6 /* Weak.swift in Sources */,
 				DE382FD72AB31A9500EA20E6 /* GetConditionDetailsRequest.swift in Sources */,
 				DE382F892AB31A9500EA20E6 /* AppDelegate.swift in Sources */,
+				DE3830C22AB4A03E00EA20E6 /* AGNHeaderCell.swift in Sources */,
 				DE382F742AB31A9500EA20E6 /* ScreenSize.swift in Sources */,
 				DE382FCB2AB31A9500EA20E6 /* GetSymptomMedsRequest.swift in Sources */,
+				DE3830742AB35A1E00EA20E6 /* AnatomyGuideNodeElement.swift in Sources */,
 				DE382F702AB31A9500EA20E6 /* RestAPITransport.swift in Sources */,
 				DE3830002AB31A9500EA20E6 /* SelectUnitView.swift in Sources */,
 				DE38301A2AB31A9500EA20E6 /* SCResultView.swift in Sources */,
 				DE382FD82AB31A9500EA20E6 /* SymptomsMediator.swift in Sources */,
+				DE3830842AB35E7200EA20E6 /* GetAnatomyGuideRequest.swift in Sources */,
 				DE3830242AB31A9500EA20E6 /* SelectGenderView.swift in Sources */,
 				DE382F802AB31A9500EA20E6 /* NavigationControllerSettings.swift in Sources */,
 				DE38302B2AB31A9500EA20E6 /* SICDetailsTableView.swift in Sources */,
@@ -1590,23 +1840,31 @@
 				DE382FFE2AB31A9500EA20E6 /* PaygateProductButton.swift in Sources */,
 				DE382F6A2AB31A9500EA20E6 /* ObservableAndSingle+Extension.swift in Sources */,
 				DE38302A2AB31A9500EA20E6 /* SICDetailsSeparatorCell.swift in Sources */,
+				DE53D5EC2AB86D52007FA841 /* GetAnatomyBookmarksRequest.swift in Sources */,
 				DE382F842AB31A9500EA20E6 /* PaddingTextField.swift in Sources */,
 				DE3830282AB31A9500EA20E6 /* SICDetailsSectionCell.swift in Sources */,
+				DE38309C2AB4660D00EA20E6 /* AnatomyGuideView.swift in Sources */,
 				DE382F652AB31A9500EA20E6 /* UIApplication+Extension.swift in Sources */,
 				DE382FD12AB31A9500EA20E6 /* GetSymptomsRequest.swift in Sources */,
+				DE3830982AB4660300EA20E6 /* AnatomyGuideViewController.swift in Sources */,
 				DE382FE02AB31A9500EA20E6 /* SettingsViewController.swift in Sources */,
 				DE382FFC2AB31A9500EA20E6 /* PaygateView.swift in Sources */,
 				DE3830052AB31A9500EA20E6 /* SelectUnitEmptyView.swift in Sources */,
 				DE382F7F2AB31A9500EA20E6 /* Toast.swift in Sources */,
 				DE382FC72AB31A9500EA20E6 /* SymtomsCheckerBlock.swift in Sources */,
 				DE382F662AB31A9500EA20E6 /* UIDevice+Extension.swift in Sources */,
+				DE3830A72AB46E9500EA20E6 /* AnatomyGuideFilterCell.swift in Sources */,
 				DE3830382AB31A9500EA20E6 /* MostSymptomButton.swift in Sources */,
 				DE38302D2AB31A9500EA20E6 /* SICDetailsFilterView.swift in Sources */,
 				DE3830262AB31A9500EA20E6 /* SICDetailsViewModel.swift in Sources */,
 				DE3830362AB31A9500EA20E6 /* SCConfirmPregnantCell.swift in Sources */,
+				DE3830922AB3642A00EA20E6 /* AnatomyManager.swift in Sources */,
 				DE382FEB2AB31A9500EA20E6 /* SplashView.swift in Sources */,
 				DE382FDB2AB31A9500EA20E6 /* SettingsView.swift in Sources */,
 				DE382FAD2AB31A9500EA20E6 /* PaygateOptionLineComponent.swift in Sources */,
+				DE3830C42AB4A09700EA20E6 /* AGNTitleCell.swift in Sources */,
+				DE3830862AB35E7A00EA20E6 /* GetAnatomyGuideResponse.swift in Sources */,
+				DE38307C2AB35D1900EA20E6 /* ContentBlock.swift in Sources */,
 				DE38302C2AB31A9500EA20E6 /* SICDetailsTableElement.swift in Sources */,
 				DE382FDF2AB31A9500EA20E6 /* SettingsTableView.swift in Sources */,
 				DE382FFD2AB31A9500EA20E6 /* PaygateViewController.swift in Sources */,
@@ -1623,6 +1881,7 @@
 				DE382FC32AB31A9500EA20E6 /* SymptomsInteractionConditionDetails.swift in Sources */,
 				DE382F712AB31A9500EA20E6 /* Scalable.swift in Sources */,
 				DE3830532AB31A9500EA20E6 /* OnboardingViewModel.swift in Sources */,
+				DE38308B2AB35E9F00EA20E6 /* GetAnatomyGuideNodeResponse.swift in Sources */,
 				DE38303A2AB31A9500EA20E6 /* SCConfirmTableView.swift in Sources */,
 				DE382F8F2AB31A9500EA20E6 /* AppsFlyerManager.swift in Sources */,
 				DE3830432AB31A9500EA20E6 /* SymptomTagsView.swift in Sources */,
@@ -1637,12 +1896,16 @@
 				DE3830292AB31A9500EA20E6 /* SICDetailsTextCell.swift in Sources */,
 				DE3830462AB31A9500EA20E6 /* SCSymptomsTableView.swift in Sources */,
 				DE3830332AB31A9500EA20E6 /* DrugTagView.swift in Sources */,
+				DE38309A2AB4660900EA20E6 /* AnatomyGuideViewModel.swift in Sources */,
 				DE382F792AB31A9500EA20E6 /* NetworkError.swift in Sources */,
 				DE382FBB2AB31A9500EA20E6 /* IAPManager.swift in Sources */,
+				DE53D5F02AB86DD1007FA841 /* GetAnatomyBookmarksResponse.swift in Sources */,
+				DE3830892AB35E9A00EA20E6 /* GetAnatomyGuideNodeRequest.swift in Sources */,
 				DE382FCA2AB31A9500EA20E6 /* GetSymptomMedsResponse.swift in Sources */,
 				DE382FFB2AB31A9500EA20E6 /* PaygateInteractor.swift in Sources */,
 				DE382FBE2AB31A9500EA20E6 /* IAPActionResult.swift in Sources */,
 				DE38303E2AB31A9500EA20E6 /* SCSymptomsView.swift in Sources */,
+				DE3830C02AB49D5F00EA20E6 /* AGNElementCell.swift in Sources */,
 				DE38304E2AB31A9500EA20E6 /* OAnatomyGuideView.swift in Sources */,
 				DE382FF82AB31A9500EA20E6 /* DefaultPaygate.swift in Sources */,
 				DE3830032AB31A9500EA20E6 /* SelectUnitTableCell.swift in Sources */,
@@ -1651,6 +1914,7 @@
 				DE382F862AB31A9500EA20E6 /* CircleView.swift in Sources */,
 				DE382FCF2AB31A9500EA20E6 /* SaveConditionRequest.swift in Sources */,
 				DE382F882AB31A9500EA20E6 /* CircleProgressView.swift in Sources */,
+				DE3830B92AB489C100EA20E6 /* AnatomyGuideNodeTableView.swift in Sources */,
 				DE3830062AB31A9500EA20E6 /* SelectUnitViewController.swift in Sources */,
 				DE382FBC2AB31A9500EA20E6 /* PurchaseValidationObserver.swift in Sources */,
 				DE382FCE2AB31A9500EA20E6 /* UnsaveConditionRequest.swift in Sources */,
@@ -1665,6 +1929,7 @@
 				DE3830412AB31A9500EA20E6 /* SCSymptomsTagsCell.swift in Sources */,
 				DE382FE22AB31A9500EA20E6 /* HomeView.swift in Sources */,
 				DE382FB02AB31A9500EA20E6 /* GetPaygateResponse.swift in Sources */,
+				DE3830B52AB47F7900EA20E6 /* AnatomyGuideNodeView.swift in Sources */,
 				DE38304C2AB31A9500EA20E6 /* OnboardingViewController.swift in Sources */,
 				DE38303D2AB31A9500EA20E6 /* SCSymptomsViewModel.swift in Sources */,
 				DE3830372AB31A9500EA20E6 /* SCConfirmMostSymptomCell.swift in Sources */,
@@ -1680,9 +1945,11 @@
 				DE382FCC2AB31A9500EA20E6 /* SymptomsCheckerRequest.swift in Sources */,
 				DE382F8B2AB31A9500EA20E6 /* PushNotificationsAuthorizationStatus.swift in Sources */,
 				DE382FD22AB31A9500EA20E6 /* GetBookmarksConditionsRequest.swift in Sources */,
+				DE38307A2AB35CBF00EA20E6 /* AnatomyGuideContent.swift in Sources */,
 				DE382FDE2AB31A9500EA20E6 /* SettingsRouteCell.swift in Sources */,
 				DE382FCD2AB31A9500EA20E6 /* SymptomsCheckerResponse.swift in Sources */,
 				DE38301B2AB31A9500EA20E6 /* SymptomCheckerCollector.swift in Sources */,
+				DE3830902AB35EFB00EA20E6 /* UnsaveAnatomeGuideElementRequest.swift in Sources */,
 				DE3830222AB31A9500EA20E6 /* SCPersonalView.swift in Sources */,
 				DE38304A2AB31A9500EA20E6 /* DisclaimerView.swift in Sources */,
 				DE382FD02AB31A9500EA20E6 /* GetSymptomsResponse.swift in Sources */,
@@ -1690,13 +1957,18 @@
 				DE382FFF2AB31A9500EA20E6 /* PaygateInfoCell.swift in Sources */,
 				DE382F872AB31A9500EA20E6 /* GradientView.swift in Sources */,
 				DE3830482AB31A9500EA20E6 /* TryAgainViewController.swift in Sources */,
+				DE3830A42AB46AF300EA20E6 /* AnatomyGuideTableCell.swift in Sources */,
+				DE38308E2AB35EDE00EA20E6 /* SaveAnatomeGuideElementRequest.swift in Sources */,
 				DE3830252AB31A9500EA20E6 /* SICDetailsView.swift in Sources */,
+				DE3830942AB3643200EA20E6 /* AnatomyMediator.swift in Sources */,
 				DE3830212AB31A9500EA20E6 /* SCPersonalViewModel.swift in Sources */,
 				DE382FBD2AB31A9500EA20E6 /* ProductPrice.swift in Sources */,
 				DE38303C2AB31A9500EA20E6 /* SCConfirmViewController.swift in Sources */,
 				DE3830422AB31A9500EA20E6 /* SymptomTagView.swift in Sources */,
 				DE382F772AB31A9500EA20E6 /* Fonts.swift in Sources */,
 				DE382F692AB31A9500EA20E6 /* Collection+Extension.swift in Sources */,
+				DE3830802AB35DE200EA20E6 /* AnatomyGuideNode.swift in Sources */,
+				DE3830782AB35A8900EA20E6 /* AnatomyGuideHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

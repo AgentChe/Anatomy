@@ -135,7 +135,7 @@ private extension OSymptomCheckerView {
     
     func makeDisclaimerButton() -> UIButton {
         let attrs = TextAttributes()
-            .textColor(Appearance.custom170)
+            .textColor(Appearance.black.withAlphaComponent(0.4))
             .font(Fonts.Avenir.regular(size: 13.scale))
             .lineHeight(18.2.scale)
             .textAlignment(.center)

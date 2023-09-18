@@ -26,8 +26,8 @@ final class SelectUnitEmptyView: UIView {
 private extension SelectUnitEmptyView {
     func makeConstraints() {
         NSLayoutConstraint.activate([
-            imageView.widthAnchor.constraint(equalToConstant: 210.scale),
-            imageView.heightAnchor.constraint(equalToConstant: 110.scale),
+            imageView.widthAnchor.constraint(equalToConstant: 80.scale),
+            imageView.heightAnchor.constraint(equalToConstant: 80.scale),
             imageView.centerXAnchor.constraint(equalTo: centerXAnchor),
             imageView.topAnchor.constraint(equalTo: topAnchor)
         ])
@@ -55,13 +55,13 @@ private extension SelectUnitEmptyView {
     func makeLabel() -> UILabel {
         let attrs = TextAttributes()
             .textColor(Appearance.black)
-            .font(Fonts.Avenir.medium(size: 17.scale))
-            .lineHeight(23.22.scale)
+            .font(Fonts.Avenir.bold(size: 15.scale))
+            .lineHeight(21.scale)
             .textAlignment(.center)
         
         let view = UILabel()
         view.attributedText = "SelectUnit.Empty".localized.attributed(with: attrs)
-        view.numberOfLines = 2
+        view.numberOfLines = 0
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         return view

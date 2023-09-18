@@ -92,11 +92,11 @@ private extension SCResultConditionCell {
     func color(for fairMatch: Int) -> UIColor {
         switch fairMatch {
         case 1:
-            return Appearance.secondary2
-        case 2:
             return Appearance.secondary3
-        case 3:
+        case 2:
             return Appearance.primary
+        case 3:
+            return Appearance.secondary2
         case 4:
             return Appearance.secondary1
         default:

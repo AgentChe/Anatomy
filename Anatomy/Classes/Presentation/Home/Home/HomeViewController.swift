@@ -76,9 +76,8 @@ private extension HomeViewController {
             let vc = SettingsViewController.make()
             present(vc, animated: true)
         case .anatomyGuide:
-//            let vc = DrugsViewController.make()
-//            navigationController?.pushViewController(vc, animated: true)
-            break // TODO
+            let vc = AnatomyGuideViewController.make()
+            navigationController?.pushViewController(vc, animated: true)
         case .symptomChecker:
             let vc = NavigationController(rootViewController: SCPersonalViewController.make())
             vc.modalPresentationStyle = .fullScreen
