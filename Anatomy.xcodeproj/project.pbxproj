@@ -236,6 +236,16 @@
 		DE53D5E92AB85E36007FA841 /* AGNTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53D5E82AB85E36007FA841 /* AGNTextCell.swift */; };
 		DE53D5EC2AB86D52007FA841 /* GetAnatomyBookmarksRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53D5EB2AB86D52007FA841 /* GetAnatomyBookmarksRequest.swift */; };
 		DE53D5F02AB86DD1007FA841 /* GetAnatomyBookmarksResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53D5EF2AB86DD1007FA841 /* GetAnatomyBookmarksResponse.swift */; };
+		DE53D6012AB87210007FA841 /* BookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53D5F22AB87210007FA841 /* BookmarkViewController.swift */; };
+		DE53D6022AB87210007FA841 /* BookmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53D5F32AB87210007FA841 /* BookmarkView.swift */; };
+		DE53D6032AB87210007FA841 /* BookmarkAnatomyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53D5F72AB87210007FA841 /* BookmarkAnatomyCell.swift */; };
+		DE53D6052AB87210007FA841 /* BookmarkConditionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53D5F92AB87210007FA841 /* BookmarkConditionCell.swift */; };
+		DE53D6062AB87210007FA841 /* BookmarkTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53D5FA2AB87210007FA841 /* BookmarkTableView.swift */; };
+		DE53D6072AB87210007FA841 /* BookmarkTableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53D5FB2AB87210007FA841 /* BookmarkTableElement.swift */; };
+		DE53D6082AB87210007FA841 /* BookmarkEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53D5FC2AB87210007FA841 /* BookmarkEmptyView.swift */; };
+		DE53D6092AB87210007FA841 /* BookmarkFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53D5FE2AB87210007FA841 /* BookmarkFilterView.swift */; };
+		DE53D60A2AB87210007FA841 /* BookmarkFilterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53D5FF2AB87210007FA841 /* BookmarkFilterButton.swift */; };
+		DE53D60B2AB87210007FA841 /* BookmarkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53D6002AB87210007FA841 /* BookmarkViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -471,6 +481,16 @@
 		DE53D5E82AB85E36007FA841 /* AGNTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AGNTextCell.swift; sourceTree = "<group>"; };
 		DE53D5EB2AB86D52007FA841 /* GetAnatomyBookmarksRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAnatomyBookmarksRequest.swift; sourceTree = "<group>"; };
 		DE53D5EF2AB86DD1007FA841 /* GetAnatomyBookmarksResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAnatomyBookmarksResponse.swift; sourceTree = "<group>"; };
+		DE53D5F22AB87210007FA841 /* BookmarkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkViewController.swift; sourceTree = "<group>"; };
+		DE53D5F32AB87210007FA841 /* BookmarkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkView.swift; sourceTree = "<group>"; };
+		DE53D5F72AB87210007FA841 /* BookmarkAnatomyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkAnatomyCell.swift; sourceTree = "<group>"; };
+		DE53D5F92AB87210007FA841 /* BookmarkConditionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkConditionCell.swift; sourceTree = "<group>"; };
+		DE53D5FA2AB87210007FA841 /* BookmarkTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkTableView.swift; sourceTree = "<group>"; };
+		DE53D5FB2AB87210007FA841 /* BookmarkTableElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkTableElement.swift; sourceTree = "<group>"; };
+		DE53D5FC2AB87210007FA841 /* BookmarkEmptyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkEmptyView.swift; sourceTree = "<group>"; };
+		DE53D5FE2AB87210007FA841 /* BookmarkFilterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkFilterView.swift; sourceTree = "<group>"; };
+		DE53D5FF2AB87210007FA841 /* BookmarkFilterButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkFilterButton.swift; sourceTree = "<group>"; };
+		DE53D6002AB87210007FA841 /* BookmarkViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkViewModel.swift; sourceTree = "<group>"; };
 		FA1F2D9097EE9C490E9C7499 /* Pods-Anatomy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anatomy.release.xcconfig"; path = "Target Support Files/Pods-Anatomy/Pods-Anatomy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -937,6 +957,7 @@
 		DE382E9B2AB31A9500EA20E6 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				DE53D5F12AB87210007FA841 /* Bookmark */,
 				DE3830952AB465EF00EA20E6 /* AnatomyGuide */,
 				DE382E9C2AB31A9500EA20E6 /* Home */,
 				DE382EAF2AB31A9500EA20E6 /* Splash */,
@@ -1629,6 +1650,55 @@
 			path = GetAnatomyBookmarks;
 			sourceTree = "<group>";
 		};
+		DE53D5F12AB87210007FA841 /* Bookmark */ = {
+			isa = PBXGroup;
+			children = (
+				DE53D5F42AB87210007FA841 /* Views */,
+				DE53D5F22AB87210007FA841 /* BookmarkViewController.swift */,
+				DE53D6002AB87210007FA841 /* BookmarkViewModel.swift */,
+				DE53D5F32AB87210007FA841 /* BookmarkView.swift */,
+			);
+			path = Bookmark;
+			sourceTree = "<group>";
+		};
+		DE53D5F42AB87210007FA841 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE53D5FD2AB87210007FA841 /* Filter */,
+				DE53D5F52AB87210007FA841 /* TableView */,
+				DE53D5FC2AB87210007FA841 /* BookmarkEmptyView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DE53D5F52AB87210007FA841 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				DE53D5F62AB87210007FA841 /* Cells */,
+				DE53D5FA2AB87210007FA841 /* BookmarkTableView.swift */,
+				DE53D5FB2AB87210007FA841 /* BookmarkTableElement.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		DE53D5F62AB87210007FA841 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DE53D5F72AB87210007FA841 /* BookmarkAnatomyCell.swift */,
+				DE53D5F92AB87210007FA841 /* BookmarkConditionCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DE53D5FD2AB87210007FA841 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				DE53D5FE2AB87210007FA841 /* BookmarkFilterView.swift */,
+				DE53D5FF2AB87210007FA841 /* BookmarkFilterButton.swift */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1786,6 +1856,7 @@
 				DE382F7E2AB31A9500EA20E6 /* RxActivityIndicator.swift in Sources */,
 				DE382FB22AB31A9500EA20E6 /* PaygateManager.swift in Sources */,
 				DE382FD42AB31A9500EA20E6 /* GetMedicalStatesRequest.swift in Sources */,
+				DE53D60B2AB87210007FA841 /* BookmarkViewModel.swift in Sources */,
 				DE382FF72AB31A9500EA20E6 /* PaygateViewModel.swift in Sources */,
 				DE3830BB2AB489CE00EA20E6 /* AnatomyGuideNodeTableElement.swift in Sources */,
 				DE38302E2AB31A9500EA20E6 /* SICDetailsFilterButton.swift in Sources */,
@@ -1794,6 +1865,8 @@
 				DE382F6C2AB31A9500EA20E6 /* UIViewRxExtension.swift in Sources */,
 				DE3830392AB31A9500EA20E6 /* SCConfirmChooseCell.swift in Sources */,
 				DE382F752AB31A9500EA20E6 /* ObservableRetrySingle.swift in Sources */,
+				DE53D6022AB87210007FA841 /* BookmarkView.swift in Sources */,
+				DE53D6012AB87210007FA841 /* BookmarkViewController.swift in Sources */,
 				DE382F6E2AB31A9500EA20E6 /* DefaultRequestWrapper.swift in Sources */,
 				DE382F782AB31A9500EA20E6 /* SignError.swift in Sources */,
 				DE382FC52AB31A9500EA20E6 /* MedicalState.swift in Sources */,
@@ -1802,6 +1875,7 @@
 				DE382FE62AB31A9500EA20E6 /* HomeTableCell.swift in Sources */,
 				DE382FF92AB31A9500EA20E6 /* PaygateOptionInfo.swift in Sources */,
 				DE382F6F2AB31A9500EA20E6 /* APIRequestBody.swift in Sources */,
+				DE53D6092AB87210007FA841 /* BookmarkFilterView.swift in Sources */,
 				DE53D5E52AB85DCE007FA841 /* AGNImageCell.swift in Sources */,
 				DE3830492AB31A9500EA20E6 /* DisclaimerViewController.swift in Sources */,
 				DE3830272AB31A9500EA20E6 /* SICDetailsViewController.swift in Sources */,
@@ -1839,6 +1913,7 @@
 				DE382FE82AB31A9500EA20E6 /* SplashActivity.swift in Sources */,
 				DE382FFE2AB31A9500EA20E6 /* PaygateProductButton.swift in Sources */,
 				DE382F6A2AB31A9500EA20E6 /* ObservableAndSingle+Extension.swift in Sources */,
+				DE53D6032AB87210007FA841 /* BookmarkAnatomyCell.swift in Sources */,
 				DE38302A2AB31A9500EA20E6 /* SICDetailsSeparatorCell.swift in Sources */,
 				DE53D5EC2AB86D52007FA841 /* GetAnatomyBookmarksRequest.swift in Sources */,
 				DE382F842AB31A9500EA20E6 /* PaddingTextField.swift in Sources */,
@@ -1853,6 +1928,7 @@
 				DE382F7F2AB31A9500EA20E6 /* Toast.swift in Sources */,
 				DE382FC72AB31A9500EA20E6 /* SymtomsCheckerBlock.swift in Sources */,
 				DE382F662AB31A9500EA20E6 /* UIDevice+Extension.swift in Sources */,
+				DE53D60A2AB87210007FA841 /* BookmarkFilterButton.swift in Sources */,
 				DE3830A72AB46E9500EA20E6 /* AnatomyGuideFilterCell.swift in Sources */,
 				DE3830382AB31A9500EA20E6 /* MostSymptomButton.swift in Sources */,
 				DE38302D2AB31A9500EA20E6 /* SICDetailsFilterView.swift in Sources */,
@@ -1862,8 +1938,10 @@
 				DE382FEB2AB31A9500EA20E6 /* SplashView.swift in Sources */,
 				DE382FDB2AB31A9500EA20E6 /* SettingsView.swift in Sources */,
 				DE382FAD2AB31A9500EA20E6 /* PaygateOptionLineComponent.swift in Sources */,
+				DE53D6052AB87210007FA841 /* BookmarkConditionCell.swift in Sources */,
 				DE3830C42AB4A09700EA20E6 /* AGNTitleCell.swift in Sources */,
 				DE3830862AB35E7A00EA20E6 /* GetAnatomyGuideResponse.swift in Sources */,
+				DE53D6062AB87210007FA841 /* BookmarkTableView.swift in Sources */,
 				DE38307C2AB35D1900EA20E6 /* ContentBlock.swift in Sources */,
 				DE38302C2AB31A9500EA20E6 /* SICDetailsTableElement.swift in Sources */,
 				DE382FDF2AB31A9500EA20E6 /* SettingsTableView.swift in Sources */,
@@ -1878,6 +1956,7 @@
 				DE382FB72AB31A9500EA20E6 /* LoginRequest.swift in Sources */,
 				DE382F762AB31A9500EA20E6 /* XOREncryption.swift in Sources */,
 				DE382F7A2AB31A9500EA20E6 /* ContentError.swift in Sources */,
+				DE53D6072AB87210007FA841 /* BookmarkTableElement.swift in Sources */,
 				DE382FC32AB31A9500EA20E6 /* SymptomsInteractionConditionDetails.swift in Sources */,
 				DE382F712AB31A9500EA20E6 /* Scalable.swift in Sources */,
 				DE3830532AB31A9500EA20E6 /* OnboardingViewModel.swift in Sources */,
@@ -1885,6 +1964,7 @@
 				DE38303A2AB31A9500EA20E6 /* SCConfirmTableView.swift in Sources */,
 				DE382F8F2AB31A9500EA20E6 /* AppsFlyerManager.swift in Sources */,
 				DE3830432AB31A9500EA20E6 /* SymptomTagsView.swift in Sources */,
+				DE53D6082AB87210007FA841 /* BookmarkEmptyView.swift in Sources */,
 				DE38303B2AB31A9500EA20E6 /* SCConfirmTableElement.swift in Sources */,
 				DE382F812AB31A9500EA20E6 /* NavigationController.swift in Sources */,
 				DE382FB82AB31A9500EA20E6 /* SyncTokensRequest.swift in Sources */,
@@ -2114,11 +2194,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = AY43JM5PH6;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 7GYTR7VMKM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Anatomy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -2130,11 +2210,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.books;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mobile.anatomy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "BookSummaries Dev";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Anatomy AppStore";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -2150,11 +2230,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = AY43JM5PH6;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 7GYTR7VMKM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Anatomy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -2166,11 +2246,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.books;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mobile.anatomy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "BookSummaries Dev";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Anatomy AppStore";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;

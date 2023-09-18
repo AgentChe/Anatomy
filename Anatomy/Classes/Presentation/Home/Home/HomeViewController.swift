@@ -83,10 +83,9 @@ private extension HomeViewController {
             vc.modalPresentationStyle = .fullScreen
             present(vc, animated: true)
         case .bookmark:
-//            let vc = NavigationController(rootViewController: BookmarkViewController.make())
-//            vc.modalPresentationStyle = .fullScreen
-//            present(vc, animated: true)
-            break // TODO
+            let vc = NavigationController(rootViewController: BookmarkViewController.make())
+            vc.modalPresentationStyle = .fullScreen
+            present(vc, animated: true)
         case .disclaimer:
             let vc = DisclaimerViewController.make()
             present(vc, animated: true)

@@ -129,20 +129,13 @@
 // MARK: Bookmark
 "Bookmark.Title" = "Bookmark";
 "Bookmark.Done" = "Done";
-"Bookmark.Drugs" = "Drugs";
-"Bookmark.Interactions" = "Interactions";
-"Bookmark.SideEffect.Minor" = "Minor";
-"Bookmark.SideEffect.MonitorClosely" = "Monitor Closely";
-"Bookmark.SideEffect.Serious" = "Serious";
-"Bookmark.SideEffect.DontUseTogether" = "Don't use together";
+"Bookmark.Anatomy" = "Anatomy";
 "Bookmark.Conditions" = "Conditions";
 "Bookmark.Disclaimer" = "The information provided in the app MUST NOT be\nregarded as a replacement for a professional medical\nadvice. Read more";
 "Bookmark.ConfirmDelete.Title" = "Are you sure?";
 "Bookmark.ConfirmDelete.Text" = "Here’s some alert text. It can span multiple lines if needed!";
-"Bookmark.Empty.Drugs.Title" = "Nothing here yet";
-"Bookmark.Empty.Drugs.Text" = "Saved drugs will appear here";
-"Bookmark.Empty.Interactions.Title" = "Nothing here yet";
-"Bookmark.Empty.Interactions.Text" = "Saved interactions will appear here";
+"Bookmark.Empty.Anatomy.Title" = "Nothing here yet";
+"Bookmark.Empty.Anatomy.Text" = "Saved terms will appear here";
 "Bookmark.Empty.Conditions.Title" = "Nothing here yet";
 "Bookmark.Empty.Conditions.Text" = "Saved conditions will appear here";
 
