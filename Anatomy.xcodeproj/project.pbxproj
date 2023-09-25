@@ -246,6 +246,8 @@
 		DE53D6092AB87210007FA841 /* BookmarkFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53D5FE2AB87210007FA841 /* BookmarkFilterView.swift */; };
 		DE53D60A2AB87210007FA841 /* BookmarkFilterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53D5FF2AB87210007FA841 /* BookmarkFilterButton.swift */; };
 		DE53D60B2AB87210007FA841 /* BookmarkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53D6002AB87210007FA841 /* BookmarkViewModel.swift */; };
+		DEC687FE2AC1643B00BCC83B /* SCReferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC687FD2AC1643B00BCC83B /* SCReferencesViewController.swift */; };
+		DEC688022AC1644400BCC83B /* SCReferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC688012AC1644400BCC83B /* SCReferencesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -491,6 +493,8 @@
 		DE53D5FE2AB87210007FA841 /* BookmarkFilterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkFilterView.swift; sourceTree = "<group>"; };
 		DE53D5FF2AB87210007FA841 /* BookmarkFilterButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkFilterButton.swift; sourceTree = "<group>"; };
 		DE53D6002AB87210007FA841 /* BookmarkViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkViewModel.swift; sourceTree = "<group>"; };
+		DEC687FD2AC1643B00BCC83B /* SCReferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCReferencesViewController.swift; sourceTree = "<group>"; };
+		DEC688012AC1644400BCC83B /* SCReferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCReferencesView.swift; sourceTree = "<group>"; };
 		FA1F2D9097EE9C490E9C7499 /* Pods-Anatomy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anatomy.release.xcconfig"; path = "Target Support Files/Pods-Anatomy/Pods-Anatomy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1123,6 +1127,7 @@
 		DE382EF52AB31A9500EA20E6 /* SymptomChecker */ = {
 			isa = PBXGroup;
 			children = (
+				DEC687FC2AC1642400BCC83B /* SCReferences */,
 				DE382EF62AB31A9500EA20E6 /* SCResult */,
 				DE382F032AB31A9500EA20E6 /* SCPersonal */,
 				DE382F0A2AB31A9500EA20E6 /* SICDetails */,
@@ -1699,6 +1704,15 @@
 			path = Filter;
 			sourceTree = "<group>";
 		};
+		DEC687FC2AC1642400BCC83B /* SCReferences */ = {
+			isa = PBXGroup;
+			children = (
+				DEC687FD2AC1643B00BCC83B /* SCReferencesViewController.swift */,
+				DEC688012AC1644400BCC83B /* SCReferencesView.swift */,
+			);
+			path = SCReferences;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1932,9 +1946,11 @@
 				DE3830A72AB46E9500EA20E6 /* AnatomyGuideFilterCell.swift in Sources */,
 				DE3830382AB31A9500EA20E6 /* MostSymptomButton.swift in Sources */,
 				DE38302D2AB31A9500EA20E6 /* SICDetailsFilterView.swift in Sources */,
+				DEC687FE2AC1643B00BCC83B /* SCReferencesViewController.swift in Sources */,
 				DE3830262AB31A9500EA20E6 /* SICDetailsViewModel.swift in Sources */,
 				DE3830362AB31A9500EA20E6 /* SCConfirmPregnantCell.swift in Sources */,
 				DE3830922AB3642A00EA20E6 /* AnatomyManager.swift in Sources */,
+				DEC688022AC1644400BCC83B /* SCReferencesView.swift in Sources */,
 				DE382FEB2AB31A9500EA20E6 /* SplashView.swift in Sources */,
 				DE382FDB2AB31A9500EA20E6 /* SettingsView.swift in Sources */,
 				DE382FAD2AB31A9500EA20E6 /* PaygateOptionLineComponent.swift in Sources */,
@@ -2196,7 +2212,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 7GYTR7VMKM;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -2210,7 +2226,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = mobile.anatomy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2232,7 +2248,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 7GYTR7VMKM;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -2246,7 +2262,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = mobile.anatomy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

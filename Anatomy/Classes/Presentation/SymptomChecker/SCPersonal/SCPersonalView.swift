@@ -13,6 +13,7 @@ final class SCPersonalView: UIView {
     lazy var sexTitleLabel = makeTitleLabel("SymptomChecker.Personal.Sex".localized)
     lazy var genderView = makeGenderView()
     lazy var continueButton = makeContinueButton()
+    lazy var referencesButton = makeReferencesButton()
     lazy var disclaimerButton = makeDisclaimerButton()
     
     private lazy var ageAttrs = TextAttributes()
@@ -81,6 +82,13 @@ private extension SCPersonalView {
         ])
         
         NSLayoutConstraint.activate([
+            referencesButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16.scale),
+            referencesButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16.scale),
+            referencesButton.bottomAnchor.constraint(equalTo: disclaimerButton.topAnchor, constant: -16.scale),
+            referencesButton.heightAnchor.constraint(equalToConstant: 54.scale)
+        ])
+        
+        NSLayoutConstraint.activate([
             disclaimerButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16.scale),
             disclaimerButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16.scale),
             disclaimerButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -23.scale),
@@ -135,6 +143,22 @@ private extension SCPersonalView {
         view.setAttributedTitle("Continue".localized.attributed(with: attrs), for: .normal)
         view.backgroundColor = Appearance.primary
         view.layer.cornerRadius = 10.scale
+        view.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(view)
+        return view
+    }
+    
+    func makeReferencesButton() -> UIButton {
+        let attrs = TextAttributes()
+            .textColor(Appearance.black.withAlphaComponent(0.4))
+            .font(Fonts.Avenir.regular(size: 14.scale))
+            .lineHeight(19.12.scale)
+            .textAlignment(.center)
+        
+        let view = UIButton()
+        view.titleLabel?.lineBreakMode = .byWordWrapping
+        view.setAttributedTitle("SymptomChecker.References".localized.attributed(with: attrs), for: .normal)
+        view.backgroundColor = UIColor.clear
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         return view

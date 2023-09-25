@@ -80,6 +80,7 @@
 "Settings.ContactUs" = "Contact us";
 "Settings.TermsOfUse" = "Terms of use";
 "Settings.PrivacyPolicy" = "Privacy policy";
+"Settings.References" = "References";
 
 // MARK: SelectUnit
 "SelectUnit.Title.Drugs" = "Drugs";
@@ -95,6 +96,7 @@
 
 // MARK: SymptomChecker
 "SymptomChecker.Title" = "Symptom Checker";
+"SymptomChecker.References" = "This product uses publicly available data form the U.S. National Library of Medicine (NLM) and the Centers for Disease Control and Prevention (CDC). Read more";
 "SymptomChecker.Disclaimer" = "The information provided in the app MUST NOT be\nregarded as a replacement for a professional medical\nadvice. Read more";
 "SymptomChecker.Personal.Age" = "Age";
 "SymptomChecker.Personal.Sex" = "Sex";
@@ -146,3 +148,9 @@
 
 // MARK: AGN
 "AGN.SeeMore" = "See more";
+
+// MARK: References
+"References.Title" = "References";
+"References.Text" = "This product uses publicly available data from the U.S. National Library of Medicine (NLM) and the Centers for Disease Control and Prevention (CDC). Both CDC and NLM provide direct access to essential health and safety topics, scientific articles, data, and statistics, along with tools and resources. NLM and CDC are not responsible for the product and do not endorse or recommend this or any other product. ";
+"References.Link1" = "https://www.nlm.nih.gov/";
+"References.Link2" = "https://www.cdc.gov/health-topics.html";

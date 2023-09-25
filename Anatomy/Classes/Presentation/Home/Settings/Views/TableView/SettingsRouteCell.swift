@@ -55,6 +55,8 @@ private extension SettingsRouteCell {
             return "Settings.TermsOfUse".localized
         case .privacyPolicy:
             return "Settings.PrivacyPolicy".localized
+        case .references:
+            return "Settings.References".localized
         }
     }
 }

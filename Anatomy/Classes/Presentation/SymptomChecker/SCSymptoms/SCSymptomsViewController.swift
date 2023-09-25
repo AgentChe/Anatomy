@@ -62,6 +62,13 @@ final class SCSymptomsViewController: UIViewController {
             })
             .disposed(by: disposeBag)
         
+        mainView.referencesButton.rx.tap
+            .bind(to: Binder(self) { base, void in
+                let vc = SCReferencesViewController.make()
+                base.present(vc, animated: true)
+            })
+            .disposed(by: disposeBag)
+        
         mainView.disclaimerButton.rx.tap
             .bind(to: Binder(self) { base, void in
                 let vc = DisclaimerViewController.make()

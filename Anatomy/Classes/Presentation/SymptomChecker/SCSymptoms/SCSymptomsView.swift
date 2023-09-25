@@ -9,6 +9,7 @@ import UIKit
 
 final class SCSymptomsView: UIView {
     lazy var tableView = makeTableView()
+    lazy var referencesButton = makeReferencesButton()
     lazy var disclaimerButton = makeDisclaimerButton()
     
     override init(frame: CGRect) {
@@ -37,7 +38,14 @@ private extension SCSymptomsView {
             tableView.leadingAnchor.constraint(equalTo: leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: trailingAnchor),
             tableView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
-            tableView.bottomAnchor.constraint(equalTo: disclaimerButton.topAnchor, constant: -2.scale)
+            tableView.bottomAnchor.constraint(equalTo: referencesButton.topAnchor, constant: -2.scale)
+        ])
+        
+        NSLayoutConstraint.activate([
+            referencesButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16.scale),
+            referencesButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16.scale),
+            referencesButton.bottomAnchor.constraint(equalTo: disclaimerButton.topAnchor, constant: -16.scale),
+            referencesButton.heightAnchor.constraint(equalToConstant: 54.scale)
         ])
         
         NSLayoutConstraint.activate([
@@ -58,6 +66,22 @@ private extension SCSymptomsView {
         view.separatorStyle = .none
         view.showsVerticalScrollIndicator = false
         view.contentInsetAdjustmentBehavior = .never
+        view.backgroundColor = UIColor.clear
+        view.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(view)
+        return view
+    }
+    
+    func makeReferencesButton() -> UIButton {
+        let attrs = TextAttributes()
+            .textColor(Appearance.black.withAlphaComponent(0.4))
+            .font(Fonts.Avenir.regular(size: 14.scale))
+            .lineHeight(19.12.scale)
+            .textAlignment(.center)
+        
+        let view = UIButton()
+        view.titleLabel?.lineBreakMode = .byWordWrapping
+        view.setAttributedTitle("SymptomChecker.References".localized.attributed(with: attrs), for: .normal)
         view.backgroundColor = UIColor.clear
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)

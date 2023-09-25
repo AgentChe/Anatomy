@@ -68,6 +68,9 @@ private extension SettingsViewController {
             open(path: GlobalDefinitions.termsOfServiceUrl)
         case .privacyPolicy:
             open(path: GlobalDefinitions.privacyPolicyUrl)
+        case .references:
+            let vc = SCReferencesViewController.make()
+            present(vc, animated: true)
         }
     }
     

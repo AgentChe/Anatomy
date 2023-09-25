@@ -41,8 +41,6 @@ private extension GetPaygateResponse {
         let line4JSON = linesJSON["4"] as? [[String: Any]]
         let line5JSON = linesJSON["5"] as? [[String: Any]]
         
-        print("productId: \(productId)")
-        
         return PaygateOptionConfig(productId: productId,
                                    line1: map(lineJSON: line1JSON),
                                    line2: map(lineJSON: line2JSON),
