@@ -15,12 +15,11 @@ final class GlobalDefinitions {
     static let appleAppID = "6466439183"
     
     static let applicationTag = "ANATOMY"
-    static let amplitudeApiKey = "11f36fb9021dbfca4a1349a3b2284224"
-    static let appsFlyerApiKey = "DCciCfYXjMQ8QnkdCg8qzk"
+    static let amplitudeApiKey = "d433d2c66723aeefd10c5b65f91c1fa3"
     
-    static let termsOfServiceUrl = "https://awesum-apps.com/terms"
-    static let privacyPolicyUrl = "https://awesum-apps.com/policy"
-    static let contactUsUrl = "https://awesum-apps.com/contact"
+    static let termsOfServiceUrl = "https://thinkaboutapps.com/policy"
+    static let privacyPolicyUrl = "https://thinkaboutapps.com/policy"
+    static let contactUsUrl = "https://thinkaboutapps.com/contact"
     
     enum Paygate {
         static let defaultLifetime = "mobile.anatomy.lifetime"

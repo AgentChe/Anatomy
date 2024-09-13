@@ -16,8 +16,6 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         FacebookManager.shared.initialize(app: application, launchOptions: launchOptions)
         BranchManager.shared.initialize(launchOptions: launchOptions)
         AmplitudeManager.shared.initialize()
-        FirebaseManager.shared.initialize()
-        AppsFlyerManager.shared.initialize()
         OtterScale.shared.initialize(host: GlobalDefinitions.otterScaleHost, apiKey: GlobalDefinitions.otterScaleApiKey)
         
         PurchaseValidationObserver.shared.startObserve()
@@ -42,10 +40,6 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         BranchManager.shared.application(continue: userActivity)
         
         return true
-    }
-    
-    func applicationDidBecomeActive(_ application: UIApplication) {
-        AppsFlyerManager.shared.applicationDidBecomeActive(application)
     }
     
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {

@@ -52,7 +52,6 @@
 		DE382F8C2AB31A9500EA20E6 /* PushNotificationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE382E272AB31A9500EA20E6 /* PushNotificationsModel.swift */; };
 		DE382F8D2AB31A9500EA20E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE382E282AB31A9500EA20E6 /* SceneDelegate.swift */; };
 		DE382F8E2AB31A9500EA20E6 /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE382E292AB31A9500EA20E6 /* Appearance.swift */; };
-		DE382F8F2AB31A9500EA20E6 /* AppsFlyerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE382E2B2AB31A9500EA20E6 /* AppsFlyerManager.swift */; };
 		DE382F902AB31A9500EA20E6 /* BranchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE382E2C2AB31A9500EA20E6 /* BranchManager.swift */; };
 		DE382F912AB31A9500EA20E6 /* AmplitudeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE382E2D2AB31A9500EA20E6 /* AmplitudeManager.swift */; };
 		DE382F922AB31A9500EA20E6 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE382E2E2AB31A9500EA20E6 /* FirebaseManager.swift */; };
@@ -222,7 +221,6 @@
 		DE3830A42AB46AF300EA20E6 /* AnatomyGuideTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3830A32AB46AF300EA20E6 /* AnatomyGuideTableCell.swift */; };
 		DE3830A72AB46E9500EA20E6 /* AnatomyGuideFilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3830A62AB46E9500EA20E6 /* AnatomyGuideFilterCell.swift */; };
 		DE3830A92AB46F3C00EA20E6 /* AnatomyGuideFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3830A82AB46F3C00EA20E6 /* AnatomyGuideFilterView.swift */; };
-		DE3830AB2AB47A5300EA20E6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE3830AA2AB47A5300EA20E6 /* GoogleService-Info.plist */; };
 		DE3830B12AB47F6E00EA20E6 /* AnatomyGuideNodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3830B02AB47F6E00EA20E6 /* AnatomyGuideNodeViewController.swift */; };
 		DE3830B32AB47F7400EA20E6 /* AnatomyGuideNodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3830B22AB47F7400EA20E6 /* AnatomyGuideNodeViewModel.swift */; };
 		DE3830B52AB47F7900EA20E6 /* AnatomyGuideNodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3830B42AB47F7900EA20E6 /* AnatomyGuideNodeView.swift */; };
@@ -299,7 +297,6 @@
 		DE382E272AB31A9500EA20E6 /* PushNotificationsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNotificationsModel.swift; sourceTree = "<group>"; };
 		DE382E282AB31A9500EA20E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DE382E292AB31A9500EA20E6 /* Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
-		DE382E2B2AB31A9500EA20E6 /* AppsFlyerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppsFlyerManager.swift; sourceTree = "<group>"; };
 		DE382E2C2AB31A9500EA20E6 /* BranchManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BranchManager.swift; sourceTree = "<group>"; };
 		DE382E2D2AB31A9500EA20E6 /* AmplitudeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmplitudeManager.swift; sourceTree = "<group>"; };
 		DE382E2E2AB31A9500EA20E6 /* FirebaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
@@ -469,7 +466,6 @@
 		DE3830A32AB46AF300EA20E6 /* AnatomyGuideTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnatomyGuideTableCell.swift; sourceTree = "<group>"; };
 		DE3830A62AB46E9500EA20E6 /* AnatomyGuideFilterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnatomyGuideFilterCell.swift; sourceTree = "<group>"; };
 		DE3830A82AB46F3C00EA20E6 /* AnatomyGuideFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnatomyGuideFilterView.swift; sourceTree = "<group>"; };
-		DE3830AA2AB47A5300EA20E6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DE3830B02AB47F6E00EA20E6 /* AnatomyGuideNodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnatomyGuideNodeViewController.swift; sourceTree = "<group>"; };
 		DE3830B22AB47F7400EA20E6 /* AnatomyGuideNodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnatomyGuideNodeViewModel.swift; sourceTree = "<group>"; };
 		DE3830B42AB47F7900EA20E6 /* AnatomyGuideNodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnatomyGuideNodeView.swift; sourceTree = "<group>"; };
@@ -560,7 +556,6 @@
 				DE3830622AB31AA200EA20E6 /* Fonts */,
 				DE38305F2AB31AA200EA20E6 /* Strings */,
 				DE382DED2AB319A600EA20E6 /* Info.plist */,
-				DE3830AA2AB47A5300EA20E6 /* GoogleService-Info.plist */,
 				DE382DEA2AB319A600EA20E6 /* LaunchScreen.storyboard */,
 				DE382DE82AB319A600EA20E6 /* Assets.xcassets */,
 				DE38306F2AB320DC00EA20E6 /* API.json */,
@@ -711,7 +706,6 @@
 		DE382E2A2AB31A9500EA20E6 /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
-				DE382E2B2AB31A9500EA20E6 /* AppsFlyerManager.swift */,
 				DE382E2C2AB31A9500EA20E6 /* BranchManager.swift */,
 				DE382E2D2AB31A9500EA20E6 /* AmplitudeManager.swift */,
 				DE382E2E2AB31A9500EA20E6 /* FirebaseManager.swift */,
@@ -1775,7 +1769,6 @@
 			files = (
 				DE3830702AB320DC00EA20E6 /* API.json in Resources */,
 				DE38306A2AB31AA200EA20E6 /* Avenir Next LT Pro Bold.otf in Resources */,
-				DE3830AB2AB47A5300EA20E6 /* GoogleService-Info.plist in Resources */,
 				DE382DEC2AB319A600EA20E6 /* LaunchScreen.storyboard in Resources */,
 				DE3830692AB31AA200EA20E6 /* Localizable.strings in Resources */,
 				DE38306D2AB31AA200EA20E6 /* Avenir Medium.ttf in Resources */,
@@ -1978,7 +1971,6 @@
 				DE3830532AB31A9500EA20E6 /* OnboardingViewModel.swift in Sources */,
 				DE38308B2AB35E9F00EA20E6 /* GetAnatomyGuideNodeResponse.swift in Sources */,
 				DE38303A2AB31A9500EA20E6 /* SCConfirmTableView.swift in Sources */,
-				DE382F8F2AB31A9500EA20E6 /* AppsFlyerManager.swift in Sources */,
 				DE3830432AB31A9500EA20E6 /* SymptomTagsView.swift in Sources */,
 				DE53D6082AB87210007FA841 /* BookmarkEmptyView.swift in Sources */,
 				DE38303B2AB31A9500EA20E6 /* SCConfirmTableElement.swift in Sources */,
@@ -2212,7 +2204,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 7GYTR7VMKM;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -2226,8 +2218,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mobile.anatomy;
+				MARKETING_VERSION = 1.2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mobile.anatomic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Anatomy AppStore";
@@ -2248,7 +2240,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 7GYTR7VMKM;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -2262,8 +2254,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mobile.anatomy;
+				MARKETING_VERSION = 1.2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mobile.anatomic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Anatomy AppStore";
