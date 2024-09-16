@@ -2206,7 +2206,7 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = AY43JM5PH6;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 2MYAP2M337;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Anatomy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -2219,7 +2219,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.3.1;
-				PRODUCT_BUNDLE_IDENTIFIER = mobile.anatomic;
+				PRODUCT_BUNDLE_IDENTIFIER = iphone.anatomy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Anatomy AppStore";
@@ -2242,7 +2242,7 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = AY43JM5PH6;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 2MYAP2M337;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Anatomy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -2255,7 +2255,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.3.1;
-				PRODUCT_BUNDLE_IDENTIFIER = mobile.anatomic;
+				PRODUCT_BUNDLE_IDENTIFIER = iphone.anatomy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Anatomy AppStore";
