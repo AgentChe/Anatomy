@@ -27,6 +27,7 @@ final class HomeViewController: UIViewController {
         
         let output = viewModel.configure(input: .init(
             didTapSettings: mainView.settingsButton.rx.tap.asSignal(),
+            didTapALConsultant: mainView.tableView.didTapALConsultant,
             didTapAnatomyGuide: mainView.tableView.didTapAnatomyGuide,
             didTapSymptomChecker: mainView.tableView.didTapSymptomChecker,
             didTapBookmark: mainView.tableView.didTapBookmark,
@@ -75,6 +76,8 @@ private extension HomeViewController {
         case .settings:
             let vc = SettingsViewController.make()
             present(vc, animated: true)
+        case .alConsultant:
+            break // TODO
         case .anatomyGuide:
             let vc = AnatomyGuideViewController.make()
             navigationController?.pushViewController(vc, animated: true)

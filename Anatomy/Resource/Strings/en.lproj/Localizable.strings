@@ -68,6 +68,8 @@
 
 // MARK: Home
 "Home.Title" = "Human Anatomy";
+"Home.ALConsultant.Title" = "AI Consultant";
+"Home.ALConsultant.Text" = "Ask AI any question you\nwant or send an image ";
 "Home.AnatomyGuide.Title" = "Anatomy Guide";
 "Home.AnatomyGuide.Text" = "Get an extensive visual guide, offering illustrations and in-depth insights into the structure of the human body.";
 "Home.SymptomChecker.Title" = "Symptom Checker";

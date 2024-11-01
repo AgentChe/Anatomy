@@ -5,7 +5,12 @@
 //  Created by Андрей Чернышев on 12.05.2023.
 //
 
-struct HomeTableElement {
+enum HomeTableElement {
+    case alConsultant
+    case defaultBlock(HomeTableDefaultElement)
+}
+
+struct HomeTableDefaultElement {
     enum Block {
         case anatomyGuide, symptomChecker, bookmark
     }

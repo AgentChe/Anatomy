@@ -1,5 +1,5 @@
 //
-//  HomeTableCell.swift
+//  HomeTableDefaultCell.swift
 //  MedicalGuides
 //
 //  Created by Андрей Чернышев on 12.05.2023.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class HomeTableCell: UITableViewCell {
+final class HomeTableDefaultCell: UITableViewCell {
     lazy var container = makeContainer()
     lazy var iconView = makeIconView()
     lazy var titleLabel = makeLabel()
@@ -34,8 +34,8 @@ final class HomeTableCell: UITableViewCell {
 }
 
 // MARK: Public
-extension HomeTableCell {
-    func setup(element: HomeTableElement) {
+extension HomeTableDefaultCell {
+    func setup(element: HomeTableDefaultElement) {
         iconView.image = UIImage(named: element.imageName)
         
         titleLabel.attributedText = element.title.attributed(with: titleAttrs)
@@ -44,7 +44,7 @@ extension HomeTableCell {
 }
 
 // MARK: Private
-private extension HomeTableCell {
+private extension HomeTableDefaultCell {
     func initialize() {
         backgroundColor = UIColor.clear
         contentView.backgroundColor = UIColor.clear
@@ -54,7 +54,7 @@ private extension HomeTableCell {
 }
 
 // MARK: Make constraints
-private extension HomeTableCell {
+private extension HomeTableDefaultCell {
     func makeConstraints() {
         NSLayoutConstraint.activate([
             container.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16.scale),
@@ -86,7 +86,7 @@ private extension HomeTableCell {
 }
 
 // MARK: Lazy initialization
-private extension HomeTableCell {
+private extension HomeTableDefaultCell {
     func makeContainer() -> UIView {
         let view = UIView()
         view.layer.cornerRadius = 8.scale

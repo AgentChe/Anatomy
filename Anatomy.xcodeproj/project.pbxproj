@@ -113,7 +113,7 @@
 		DE382FE32AB31A9500EA20E6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE382EA92AB31A9500EA20E6 /* HomeViewController.swift */; };
 		DE382FE42AB31A9500EA20E6 /* HomeTableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE382EAC2AB31A9500EA20E6 /* HomeTableElement.swift */; };
 		DE382FE52AB31A9500EA20E6 /* HomeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE382EAD2AB31A9500EA20E6 /* HomeTableView.swift */; };
-		DE382FE62AB31A9500EA20E6 /* HomeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE382EAE2AB31A9500EA20E6 /* HomeTableCell.swift */; };
+		DE382FE62AB31A9500EA20E6 /* HomeTableDefaultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE382EAE2AB31A9500EA20E6 /* HomeTableDefaultCell.swift */; };
 		DE382FE72AB31A9500EA20E6 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE382EB02AB31A9500EA20E6 /* SplashViewController.swift */; };
 		DE382FE82AB31A9500EA20E6 /* SplashActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE382EB22AB31A9500EA20E6 /* SplashActivity.swift */; };
 		DE382FE92AB31A9500EA20E6 /* SplashReceiptValidationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE382EB32AB31A9500EA20E6 /* SplashReceiptValidationObserver.swift */; };
@@ -247,6 +247,7 @@
 		DEC687FE2AC1643B00BCC83B /* SCReferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC687FD2AC1643B00BCC83B /* SCReferencesViewController.swift */; };
 		DEC688022AC1644400BCC83B /* SCReferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC688012AC1644400BCC83B /* SCReferencesView.swift */; };
 		DECA039E2CD52B21005E7C38 /* OALConsultantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECA039D2CD52B21005E7C38 /* OALConsultantView.swift */; };
+		DECA03A12CD53557005E7C38 /* HomeTableALConsultantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECA03A02CD53557005E7C38 /* HomeTableALConsultantCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -359,7 +360,7 @@
 		DE382EA92AB31A9500EA20E6 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DE382EAC2AB31A9500EA20E6 /* HomeTableElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableElement.swift; sourceTree = "<group>"; };
 		DE382EAD2AB31A9500EA20E6 /* HomeTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableView.swift; sourceTree = "<group>"; };
-		DE382EAE2AB31A9500EA20E6 /* HomeTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableCell.swift; sourceTree = "<group>"; };
+		DE382EAE2AB31A9500EA20E6 /* HomeTableDefaultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableDefaultCell.swift; sourceTree = "<group>"; };
 		DE382EB02AB31A9500EA20E6 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		DE382EB22AB31A9500EA20E6 /* SplashActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashActivity.swift; sourceTree = "<group>"; };
 		DE382EB32AB31A9500EA20E6 /* SplashReceiptValidationObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashReceiptValidationObserver.swift; sourceTree = "<group>"; };
@@ -493,6 +494,7 @@
 		DEC687FD2AC1643B00BCC83B /* SCReferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCReferencesViewController.swift; sourceTree = "<group>"; };
 		DEC688012AC1644400BCC83B /* SCReferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCReferencesView.swift; sourceTree = "<group>"; };
 		DECA039D2CD52B21005E7C38 /* OALConsultantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OALConsultantView.swift; sourceTree = "<group>"; };
+		DECA03A02CD53557005E7C38 /* HomeTableALConsultantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableALConsultantCell.swift; sourceTree = "<group>"; };
 		FA1F2D9097EE9C490E9C7499 /* Pods-Anatomy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anatomy.release.xcconfig"; path = "Target Support Files/Pods-Anatomy/Pods-Anatomy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1012,9 +1014,9 @@
 			isa = PBXGroup;
 			children = (
 				DE382EAA2AB31A9500EA20E6 /* Views */,
+				DE382EA92AB31A9500EA20E6 /* HomeViewController.swift */,
 				DE382EA72AB31A9500EA20E6 /* HomeViewModel.swift */,
 				DE382EA82AB31A9500EA20E6 /* HomeView.swift */,
-				DE382EA92AB31A9500EA20E6 /* HomeViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -1030,9 +1032,9 @@
 		DE382EAB2AB31A9500EA20E6 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
-				DE382EAC2AB31A9500EA20E6 /* HomeTableElement.swift */,
+				DECA039F2CD52E72005E7C38 /* Cells */,
 				DE382EAD2AB31A9500EA20E6 /* HomeTableView.swift */,
-				DE382EAE2AB31A9500EA20E6 /* HomeTableCell.swift */,
+				DE382EAC2AB31A9500EA20E6 /* HomeTableElement.swift */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -1710,6 +1712,15 @@
 			path = SCReferences;
 			sourceTree = "<group>";
 		};
+		DECA039F2CD52E72005E7C38 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DECA03A02CD53557005E7C38 /* HomeTableALConsultantCell.swift */,
+				DE382EAE2AB31A9500EA20E6 /* HomeTableDefaultCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1881,8 +1892,9 @@
 				DE382F782AB31A9500EA20E6 /* SignError.swift in Sources */,
 				DE382FC52AB31A9500EA20E6 /* MedicalState.swift in Sources */,
 				DE38303F2AB31A9500EA20E6 /* SCSymptomsViewController.swift in Sources */,
+				DECA03A12CD53557005E7C38 /* HomeTableALConsultantCell.swift in Sources */,
 				DE382F902AB31A9500EA20E6 /* BranchManager.swift in Sources */,
-				DE382FE62AB31A9500EA20E6 /* HomeTableCell.swift in Sources */,
+				DE382FE62AB31A9500EA20E6 /* HomeTableDefaultCell.swift in Sources */,
 				DE382FF92AB31A9500EA20E6 /* PaygateOptionInfo.swift in Sources */,
 				DE382F6F2AB31A9500EA20E6 /* APIRequestBody.swift in Sources */,
 				DE53D6092AB87210007FA841 /* BookmarkFilterView.swift in Sources */,

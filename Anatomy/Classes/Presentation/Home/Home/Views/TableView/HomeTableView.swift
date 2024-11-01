@@ -12,6 +12,7 @@ import RxCocoa
 final class HomeTableView: UITableView {
     lazy var elements = [HomeTableElement]()
     
+    private lazy var didTapALConsultantTrigger = PublishRelay<Void>()
     private lazy var didTapAnatomyGuideTrigger = PublishRelay<Void>()
     private lazy var didTapSymptomCheckerTrigger = PublishRelay<Void>()
     private lazy var didTapBookmarkTrigger = PublishRelay<Void>()
@@ -35,6 +36,10 @@ extension HomeTableView {
         reloadData()
     }
     
+    var didTapALConsultant: Signal<Void> {
+        didTapALConsultantTrigger.asSignal()
+    }
+    
     var didTapAnatomyGuide: Signal<Void> {
         didTapAnatomyGuideTrigger.asSignal()
     }
@@ -55,9 +60,14 @@ extension HomeTableView: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = dequeueReusableCell(withIdentifier: String(describing: HomeTableCell.self)) as! HomeTableCell
-        cell.setup(element: elements[indexPath.row])
-        return cell
+        switch elements[indexPath.row] {
+        case .alConsultant:
+            return dequeueReusableCell(withIdentifier: String(describing: HomeTableALConsultantCell.self), for: indexPath)
+        case .defaultBlock(let element):
+            let cell = dequeueReusableCell(withIdentifier: String(describing: HomeTableDefaultCell.self)) as! HomeTableDefaultCell
+            cell.setup(element: element)
+            return cell
+        }
     }
 }
 
@@ -68,13 +78,18 @@ extension HomeTableView: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        switch elements[indexPath.row].block {
-        case .anatomyGuide:
-            didTapAnatomyGuideTrigger.accept(Void())
-        case .symptomChecker:
-            didTapSymptomCheckerTrigger.accept(Void())
-        case .bookmark:
-            didTapBookmarkTrigger.accept(Void())
+        switch elements[indexPath.row] {
+        case .alConsultant:
+            didTapALConsultantTrigger.accept(Void())
+        case .defaultBlock(let element):
+            switch element.block {
+            case .anatomyGuide:
+                didTapAnatomyGuideTrigger.accept(Void())
+            case .symptomChecker:
+                didTapSymptomCheckerTrigger.accept(Void())
+            case .bookmark:
+                didTapBookmarkTrigger.accept(Void())
+            }
         }
     }
 }
@@ -82,7 +97,8 @@ extension HomeTableView: UITableViewDelegate {
 // MARK: Private
 private extension HomeTableView {
     func initialize() {
-        register(HomeTableCell.self, forCellReuseIdentifier: String(describing: HomeTableCell.self))
+        register(HomeTableALConsultantCell.self, forCellReuseIdentifier: String(describing: HomeTableALConsultantCell.self))
+        register(HomeTableDefaultCell.self, forCellReuseIdentifier: String(describing: HomeTableDefaultCell.self))
         
         dataSource = self
         delegate = self
