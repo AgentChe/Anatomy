@@ -9,7 +9,7 @@ import UIKit
 
 final class OnboardingView: UIView {
     enum Step: Int {
-        case disclaimer, drugGuide, symptomChecker
+        case disclaimer, drugGuide, symptomChecker, alConsultant
     }
     
     var didFinish: (() -> Void)?
@@ -19,7 +19,8 @@ final class OnboardingView: UIView {
         [
             ODisclaimerView(step: .disclaimer),
             ODrugGuideView(step: .drugGuide),
-            OSymptomCheckerView(step: .symptomChecker)
+            OSymptomCheckerView(step: .symptomChecker),
+            OALConsultantView(step: .alConsultant)
         ]
     }()
     

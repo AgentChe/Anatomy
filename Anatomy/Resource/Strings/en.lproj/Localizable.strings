@@ -32,9 +32,9 @@
 
 // MARK: Paygate
 "Paygate.Title" = "Get unlimited access";
-"Paygate.Cell1" = "More than 10,000 entries on General Anatomy and the Human Body";
-"Paygate.Cell2" = "Powerful Symptom Checker";
-"Paygate.Cell3" = "Organized Bookmarks";
+"Paygate.Cell1" = "More than 10,000 entries on General\nAnatomy and the Human Body";
+"Paygate.Cell2" = "AI-powered Human Body Atlas";
+"Paygate.Cell3" = "Powerful Symptom Checker";
 "Paygate.Secured" = "Secured by the App Store. Cancel anytime.";
 "Paygate.TermsOfUse" = "Terms of use";
 "Paygate.And" = "and";
@@ -62,6 +62,8 @@
 "Onboarding.AnatomyGuide.Text" = "Discover a comprehensive visual reference with detailed illustrations and information about the structures and systems of the human body.";
 "Onboarding.SymptomChecker.Title" = "Symptom Checker";
 "Onboarding.SymptomChecker.Text" = "Identify a potential condition and recommend suitable treatment options by choosing symptoms and responding to a brief set of questions.";
+"Onboarding.ALConsultant.Title" = "AI Consultant";
+"Onboarding.ALConsultant.Text" = "Our AI-powered atlas lets you ask anything and get real-time, expert-level answers instantly. Your anatomy consultant, available 24/7.";
 "Onboarding.Disclaimer.Placeholder" = "The information provided in the app MUST NOT be regarded as a replacement for a professional medical advice. Read more";
 
 // MARK: Home

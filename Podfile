@@ -1,4 +1,4 @@
-platform :ios, ‘14.0’
+platform :ios, ‘16.0’
 inhibit_all_warnings!
 use_frameworks!
 
@@ -6,7 +6,9 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 target 'Anatomy' do
   pod 'NotificationBannerSwift'
+  pod 'Toast-Swift'
   pod 'Kingfisher'
+  pod 'Mantis'
   
   pod 'RxSwift'
   pod 'RxCocoa'
@@ -27,7 +29,7 @@ end
 post_install do |installer|
   installer.pods_project.targets.each do |target|
     target.build_configurations.each do |config|
-      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '14.0'
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '16.0'
       config.build_settings['DEBUG_INFORMATION_FORMAT'] = 'dwarf'
     end
   end

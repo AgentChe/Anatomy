@@ -246,6 +246,7 @@
 		DE53D60B2AB87210007FA841 /* BookmarkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53D6002AB87210007FA841 /* BookmarkViewModel.swift */; };
 		DEC687FE2AC1643B00BCC83B /* SCReferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC687FD2AC1643B00BCC83B /* SCReferencesViewController.swift */; };
 		DEC688022AC1644400BCC83B /* SCReferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC688012AC1644400BCC83B /* SCReferencesView.swift */; };
+		DECA039E2CD52B21005E7C38 /* OALConsultantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECA039D2CD52B21005E7C38 /* OALConsultantView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -491,6 +492,7 @@
 		DE53D6002AB87210007FA841 /* BookmarkViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkViewModel.swift; sourceTree = "<group>"; };
 		DEC687FD2AC1643B00BCC83B /* SCReferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCReferencesViewController.swift; sourceTree = "<group>"; };
 		DEC688012AC1644400BCC83B /* SCReferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCReferencesView.swift; sourceTree = "<group>"; };
+		DECA039D2CD52B21005E7C38 /* OALConsultantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OALConsultantView.swift; sourceTree = "<group>"; };
 		FA1F2D9097EE9C490E9C7499 /* Pods-Anatomy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anatomy.release.xcconfig"; path = "Target Support Files/Pods-Anatomy/Pods-Anatomy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1429,8 +1431,8 @@
 			children = (
 				DE382F4C2AB31A9500EA20E6 /* Views */,
 				DE382F4B2AB31A9500EA20E6 /* OnboardingViewController.swift */,
-				DE382F532AB31A9500EA20E6 /* OnboardingView.swift */,
 				DE382F542AB31A9500EA20E6 /* OnboardingViewModel.swift */,
+				DE382F532AB31A9500EA20E6 /* OnboardingView.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -1443,6 +1445,7 @@
 				DE382F4F2AB31A9500EA20E6 /* OAnatomyGuideView.swift */,
 				DE382F502AB31A9500EA20E6 /* OSlideView.swift */,
 				DE382F522AB31A9500EA20E6 /* OSymptomCheckerView.swift */,
+				DECA039D2CD52B21005E7C38 /* OALConsultantView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -2026,6 +2029,7 @@
 				DE382FBF2AB31A9500EA20E6 /* IAPProduct.swift in Sources */,
 				DE382F8D2AB31A9500EA20E6 /* SceneDelegate.swift in Sources */,
 				DE382FC02AB31A9500EA20E6 /* IAPError.swift in Sources */,
+				DECA039E2CD52B21005E7C38 /* OALConsultantView.swift in Sources */,
 				DE382FE72AB31A9500EA20E6 /* SplashViewController.swift in Sources */,
 				DE38304D2AB31A9500EA20E6 /* ODisclaimerView.swift in Sources */,
 				DE382FDD2AB31A9500EA20E6 /* SettingsTableElement.swift in Sources */,
@@ -2202,27 +2206,25 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 5;
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 2MYAP2M337;
+				DEVELOPMENT_TEAM = 2GY8CB289H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Anatomy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.3.1;
-				PRODUCT_BUNDLE_IDENTIFIER = iphone.anatomy;
+				PRODUCT_BUNDLE_IDENTIFIER = iphone.anatomy.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Anatomy AppStore";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -2238,27 +2240,25 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 5;
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 2MYAP2M337;
+				DEVELOPMENT_TEAM = 2GY8CB289H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Anatomy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.3.1;
-				PRODUCT_BUNDLE_IDENTIFIER = iphone.anatomy;
+				PRODUCT_BUNDLE_IDENTIFIER = iphone.anatomy.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Anatomy AppStore";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;

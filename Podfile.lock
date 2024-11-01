@@ -100,6 +100,7 @@ PODS:
   - GoogleUtilities/UserDefaults (7.11.5):
     - GoogleUtilities/Logger
   - Kingfisher (7.9.1)
+  - Mantis (2.21.0)
   - MarqueeLabel (4.3.1)
   - nanopb (2.30909.0):
     - nanopb/decode (= 2.30909.0)
@@ -119,6 +120,7 @@ PODS:
   - RxSwift (6.5.0)
   - SnapKit (5.6.0)
   - SwiftyStoreKit (0.16.1)
+  - Toast-Swift (5.1.1)
 
 DEPENDENCIES:
   - Alamofire
@@ -128,11 +130,13 @@ DEPENDENCIES:
   - Firebase/Analytics
   - Firebase/Messaging
   - Kingfisher
+  - Mantis
   - NotificationBannerSwift
   - OtterScaleiOS (from `https://github.com/AgentChe/OtterScaleiOS.git`)
   - RxCocoa
   - RxSwift
   - SwiftyStoreKit
+  - Toast-Swift
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -152,6 +156,7 @@ SPEC REPOS:
     - GoogleDataTransport
     - GoogleUtilities
     - Kingfisher
+    - Mantis
     - MarqueeLabel
     - nanopb
     - NotificationBannerSwift
@@ -161,6 +166,7 @@ SPEC REPOS:
     - RxSwift
     - SnapKit
     - SwiftyStoreKit
+    - Toast-Swift
 
 EXTERNAL SOURCES:
   OtterScaleiOS:
@@ -188,6 +194,7 @@ SPEC CHECKSUMS:
   GoogleDataTransport: 54dee9d48d14580407f8f5fbf2f496e92437a2f2
   GoogleUtilities: 13e2c67ede716b8741c7989e26893d151b2b2084
   Kingfisher: 1d14e9f59cbe19389f591c929000332bf70efd32
+  Mantis: e9712f7b0d07709326e6f333bf16bd5828c0a4c9
   MarqueeLabel: da4b9cf619fe70c75d7bab4580b0b4a0b868aa6b
   nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
   NotificationBannerSwift: dce54ded532b26e30cd8e7f4d80e124a0f2ba7d1
@@ -198,7 +205,8 @@ SPEC CHECKSUMS:
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SwiftyStoreKit: 6b9c08810269f030586dac1fae8e75871a82e84a
+  Toast-Swift: 7a03a532afe3a560d4044bc7c237e2864d295173
 
-PODFILE CHECKSUM: 826599c6eb25b46c6822dd222e38c4ebf9881224
+PODFILE CHECKSUM: ff3cf57175b4d79c9b82ecb880ec413eabe67a2a
 
-COCOAPODS: 1.14.3
+COCOAPODS: 1.15.2
