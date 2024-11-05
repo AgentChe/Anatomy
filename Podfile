@@ -9,6 +9,7 @@ target 'Anatomy' do
   pod 'Toast-Swift'
   pod 'Kingfisher'
   pod 'Mantis'
+  pod 'lottie-ios'
   
   pod 'RxSwift'
   pod 'RxCocoa'

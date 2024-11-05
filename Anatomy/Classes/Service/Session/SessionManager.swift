@@ -11,6 +11,8 @@ import OtterScaleiOS
 protocol SessionManagerProtocol {
     func store(session: Session)
     func getSession() -> Session?
+    var anonymousId: String { get }
+    var internalId: String { get }
     func hasActiveSubscriptions() -> Bool
 }
 
@@ -39,6 +41,14 @@ extension SessionManager {
         }
 
         return session
+    }
+    
+    var anonymousId: String {
+        OtterScale.shared.getAnonymousID()
+    }
+    
+    var internalId: String {
+        OtterScale.shared.getInternalID()
     }
     
     func hasActiveSubscriptions() -> Bool {

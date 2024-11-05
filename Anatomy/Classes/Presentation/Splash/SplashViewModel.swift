@@ -63,20 +63,15 @@ private extension SplashViewModel {
             let otterScaleID = OtterScale.shared.getInternalID()
             
             func source() -> Single<Void> {
-                let complete: Single<Void>
+                let anonymousId = sessionManager.anonymousId
+                let internalId = sessionManager.internalId
                 
-                if let cachedToken = self.sessionManager.getSession()?.userToken {
-                    if cachedToken != otterScaleID {
-                        complete = self.profileManager.syncTokens(oldToken: cachedToken,
-                                                                  newToken: otterScaleID)
-                    } else {
-                        complete = .deferred { .just(Void()) }
-                    }
-                } else {
-                    complete = self.profileManager.login(userToken: otterScaleID)
-                }
+                let scinCare = (anonymousId == internalId) ? profileManager.create() : profileManager.binding()
+                let dermatology = (anonymousId == internalId) ? profileManager.anatomyLogin() : profileManager.anatomySyncTokens()
                 
-                return complete
+                return Single
+                    .zip(scinCare, dermatology)
+                    .mapToVoid()
             }
             
             func trigger(error: Error) -> Observable<Void> {

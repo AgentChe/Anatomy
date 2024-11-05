@@ -10,8 +10,10 @@ import RxSwift
 protocol ProfileManagerProtocol {
     func set(spellsCategoriesIds: [Int]?) -> Single<Void>
     func obtainProfile(forceUpdate: Bool) -> Single<Profile?>
-    func syncTokens(oldToken: String, newToken: String) -> Single<Void>
-    func login(userToken: String) -> Single<Void>
+    func anatomySyncTokens() -> Single<Void>
+    func anatomyLogin() -> Single<Void>
+    func create() -> Single<Void>
+    func binding() -> Single<Void>
 }
 
 final class ProfileManager {
@@ -19,7 +21,7 @@ final class ProfileManager {
         static let spellsCategoriesIds = "profile_manager_spells_categories_ids_key"
     }
     
-    private lazy var defaultRequestWrapper = DefaultRequestWrapper()
+    private lazy var restApiTransport = RestAPITransport()
     
     private lazy var sessionManager = SessionManager()
 }
@@ -33,7 +35,7 @@ extension ProfileManager: ProfileManagerProtocol {
         
         let request = GetProfileRequest(userToken: userToken)
         
-        return defaultRequestWrapper
+        return restApiTransport
             .callServerApi(requestBody: request)
             .mapToVoid()
             .do(onSuccess: { [weak self] in
@@ -45,19 +47,43 @@ extension ProfileManager: ProfileManagerProtocol {
         forceUpdate ? loadProfile() : cachedProfile()
     }
     
-    func syncTokens(oldToken: String, newToken: String) -> Single<Void> {
-        let request = SyncTokensRequest(oldToken: oldToken,
-                                        newToken: newToken)
+    func anatomySyncTokens() -> Single<Void> {
+        let request = SyncTokensRequest(
+            oldToken: sessionManager.anonymousId,
+            newToken: sessionManager.internalId
+        )
         
-        return defaultRequestWrapper
+        return restApiTransport
             .callServerApi(requestBody: request)
             .mapToVoid()
     }
     
-    func login(userToken: String) -> Single<Void> {
-        let request = LoginRequest(userToken: userToken)
+    func anatomyLogin() -> Single<Void> {
+        let request = LoginRequest(userToken: sessionManager.internalId)
         
-        return defaultRequestWrapper
+        return restApiTransport
+            .callServerApi(requestBody: request)
+            .mapToVoid()
+    }
+    
+    func create() -> Single<Void> {
+        let request = ProfileCreateRequest(
+            anonymousId: sessionManager.anonymousId,
+            internalId: sessionManager.internalId
+        )
+        
+        return restApiTransport
+            .callServerApi(requestBody: request)
+            .mapToVoid()
+    }
+    
+    func binding() -> Single<Void> {
+        let request = ProfileBindingRequest(
+            anonymousId: sessionManager.anonymousId,
+            internalId: sessionManager.internalId
+        )
+        
+        return restApiTransport
             .callServerApi(requestBody: request)
             .mapToVoid()
     }
@@ -72,7 +98,7 @@ private extension ProfileManager {
         
         let request = GetProfileRequest(userToken: userToken)
         
-        return defaultRequestWrapper
+        return restApiTransport
             .callServerApi(requestBody: request)
             .map { GetProfileResponse.map(from: $0) }
             .do(onSuccess: { [weak self] profile in

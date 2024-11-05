@@ -75,26 +75,25 @@ extension PaygateInteractor: OtterScaleReceiptValidationDelegate {
     func otterScaleDidValidatedReceipt(with result: AppStoreValidateResult?) {
         OtterScale.shared.removeReceiptValidation(delegate: self)
         
-        let otterScaleID = OtterScale.shared.getInternalID()
+        let complete: Single<Void> = {
+            let anonymousId = sessionManager.anonymousId
+            let internalId = sessionManager.internalId
         
-        let complete: Single<Void>
+            let scinCare = (anonymousId == internalId) ? profileManager.create() : profileManager.binding()
+            let dermatology = (anonymousId == internalId) ? profileManager.anatomyLogin() : profileManager.anatomySyncTokens()
         
-        if let cachedToken = self.sessionManager.getSession()?.userToken {
-            if cachedToken != otterScaleID {
-                complete = self.profileManager.syncTokens(oldToken: cachedToken, newToken: otterScaleID)
-            } else {
-                complete = .deferred { .just(Void()) }
-            }
-        } else {
-            complete = self.profileManager.login(userToken: otterScaleID)
-        }
+            return Single
+                .zip(scinCare, dermatology)
+                .mapToVoid()
+                .catchAndReturn(())
+        }()
         
         let disposable = complete.subscribe(onSuccess: { [weak self] in
             guard let self = self else {
                 return
             }
             
-            let session = Session(userToken: otterScaleID)
+            let session = Session(userToken: OtterScale.shared.getInternalID())
             self.sessionManager.store(session: session)
             
             let hasActiveSubscriptions = self.sessionManager.hasActiveSubscriptions()

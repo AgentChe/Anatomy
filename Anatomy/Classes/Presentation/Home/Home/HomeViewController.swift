@@ -77,7 +77,8 @@ private extension HomeViewController {
             let vc = SettingsViewController.make()
             present(vc, animated: true)
         case .alConsultant:
-            break // TODO
+            let vc = ChatViewController.make()
+            navigationController?.pushViewController(vc, animated: true)
         case .anatomyGuide:
             let vc = AnatomyGuideViewController.make()
             navigationController?.pushViewController(vc, animated: true)
