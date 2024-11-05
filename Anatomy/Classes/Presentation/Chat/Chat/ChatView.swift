@@ -10,6 +10,7 @@ import UIKit
 final class ChatView: UIView {
     lazy var placeholderView = makePlaceholderView()
     lazy var tableView = makeTableView()
+    lazy var addFileButton = makeAddFileButton()
     lazy var inputField = makeInputField()
     lazy var regenerateView = makeRegenerateView()
     
@@ -49,7 +50,14 @@ private extension ChatView {
         ])
         
         NSLayoutConstraint.activate([
-            inputField.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16.scale),
+            addFileButton.widthAnchor.constraint(equalToConstant: 47.scale),
+            addFileButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16.scale),
+            addFileButton.topAnchor.constraint(equalTo: inputField.topAnchor),
+            addFileButton.bottomAnchor.constraint(equalTo: keyboardLayoutGuide.topAnchor, constant: -14.scale)
+        ])
+        
+        NSLayoutConstraint.activate([
+            inputField.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 75.scale),
             inputField.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16.scale),
             inputField.bottomAnchor.constraint(equalTo: keyboardLayoutGuide.topAnchor, constant: -14.scale)
         ])
@@ -79,6 +87,24 @@ private extension ChatView {
         view.showsVerticalScrollIndicator = false
         view.contentInsetAdjustmentBehavior = .never
         view.backgroundColor = UIColor.clear
+        view.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(view)
+        return view
+    }
+    
+    func makeAddFileButton() -> UIButton {
+        let attrs = TextAttributes()
+            .textColor(Appearance.black)
+            .font(Fonts.Avenir.regular(size: 16.scale))
+        
+        let view = UIButton()
+        view.setAttributedTitle("+".attributed(with: attrs), for: .normal)
+        view.backgroundColor = Appearance.white
+        view.layer.cornerRadius = 8.scale
+        view.layer.shadowColor = Appearance.black.withAlphaComponent(0.4).cgColor
+        view.layer.shadowOpacity = 0.1
+        view.layer.shadowOffset = .zero
+        view.layer.shadowRadius = 4.scale
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         return view

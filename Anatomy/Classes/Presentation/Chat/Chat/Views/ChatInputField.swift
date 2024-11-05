@@ -35,6 +35,7 @@ extension ChatInputField: UITextFieldDelegate {
 private extension ChatInputField {
     func initialize() {
         backgroundColor = Appearance.white
+        layer.masksToBounds = true 
         layer.cornerRadius = 8.scale
         layer.shadowColor = Appearance.black.withAlphaComponent(0.4).cgColor
         layer.shadowOpacity = 0.1

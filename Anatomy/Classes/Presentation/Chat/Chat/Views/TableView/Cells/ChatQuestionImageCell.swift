@@ -115,7 +115,7 @@ private extension ChatQuestionImageCell {
         let view = UIImageView()
         view.contentMode = .scaleAspectFit
         view.layer.masksToBounds = true
-        view.layer.cornerRadius = 45.scale
+        view.layer.cornerRadius = 24.scale
         view.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(view)
         return view

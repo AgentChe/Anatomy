@@ -167,9 +167,22 @@
 "Chat.Regenerate.Text" = "There was an error generating a response";
 "Chat.Regenerate.Button" = "Regenerate";
 "Chat.Copied.Toast" = "Text copied";
+"Chat.FileSource.Gallery" = "Gallery";
+"Chat.FileSource.Files" = "Files";
+"Chat.FileSource.Camera" = "Camera";
 
 // MARK: Chats
 "Chats.Title" = "Chat history";
 "Chats.ConfirmDelete.Title" = "Are you sure?";
 "Chats.ConfirmDelete.SubTitle" = "Do you really want to delete this chat?";
 "Chats.ConfirmDelete.Delete" = "Remove";
+
+// MARK: AnalyseCamera
+"AnalyseCamera.Placeholder" = "Center the skin area in the frame";
+"AnalyseCamera.NotPermissions.Title" = "No permission";
+"AnalyseCamera.NotPermissions.Text" = "Please go to settings and give permission to receive images for scanning";
+
+// MARK: AnalyseImageResize
+"AnalyseImageResize.AcceptPhoto" = "Accept photo";
+"AnalyseImageResize.Retake" = "Retake";
+"AnalyseImageResize.RetakePhoto" = "Retake photo";

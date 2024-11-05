@@ -50,11 +50,13 @@ extension ChatViewModel {
         let didTapRegenerate: Signal<DataForSendMessage>
         let didTapCopy: Signal<String>
         let didTapRefresh: Signal<ChatTableAnswerElement>
+        let didInputText: Signal<String>
     }
     
     struct Output {
         let route: Driver<Route>
         let action: Driver<Action>
+        let lockAddFile: Driver<Bool>
     }
     
     func configure(input: Input) -> Output {
@@ -71,7 +73,8 @@ extension ChatViewModel {
                 didTapCopy: input.didTapCopy,
                 didTapRefresh: input.didTapRefresh,
                 didScrollToTop: input.didScrollToTop
-            )
+            ),
+            lockAddFile: makeLockAddFile(text: input.didInputText)
         )
     }
 }
@@ -331,6 +334,13 @@ private extension ChatViewModel {
                             .startWith(firstPage)
                     }
             }
+    }
+    
+    func makeLockAddFile(text: Signal<String>) -> Driver<Bool> {
+        text
+            .map { $0.isEmpty }
+            .startWith(true)
+            .asDriver(onErrorDriveWith: .never())
     }
 }
 

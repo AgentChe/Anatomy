@@ -244,6 +244,14 @@
 		DE53D6092AB87210007FA841 /* BookmarkFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53D5FE2AB87210007FA841 /* BookmarkFilterView.swift */; };
 		DE53D60A2AB87210007FA841 /* BookmarkFilterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53D5FF2AB87210007FA841 /* BookmarkFilterButton.swift */; };
 		DE53D60B2AB87210007FA841 /* BookmarkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53D6002AB87210007FA841 /* BookmarkViewModel.swift */; };
+		DEA536262CDA292600154DEF /* AnalyseCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA536242CDA292600154DEF /* AnalyseCameraViewController.swift */; };
+		DEA536272CDA292600154DEF /* AnalyseCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA536232CDA292600154DEF /* AnalyseCameraView.swift */; };
+		DEA536282CDA292600154DEF /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA5361F2CDA292600154DEF /* CameraService.swift */; };
+		DEA536292CDA292600154DEF /* AnalyseCameraOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA536212CDA292600154DEF /* AnalyseCameraOptionsView.swift */; };
+		DEA536312CDA292D00154DEF /* AnalyseImageResizeOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA5362A2CDA292D00154DEF /* AnalyseImageResizeOptionsView.swift */; };
+		DEA536322CDA292D00154DEF /* AnalyseImageResizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA5362D2CDA292D00154DEF /* AnalyseImageResizeViewController.swift */; };
+		DEA536332CDA292D00154DEF /* AnalyseImageResizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA5362C2CDA292D00154DEF /* AnalyseImageResizeView.swift */; };
+		DEA536352CDA293B00154DEF /* AnalyseScanAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA536342CDA293B00154DEF /* AnalyseScanAssembly.swift */; };
 		DEC687FE2AC1643B00BCC83B /* SCReferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC687FD2AC1643B00BCC83B /* SCReferencesViewController.swift */; };
 		DEC688022AC1644400BCC83B /* SCReferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC688012AC1644400BCC83B /* SCReferencesView.swift */; };
 		DECA039E2CD52B21005E7C38 /* OALConsultantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECA039D2CD52B21005E7C38 /* OALConsultantView.swift */; };
@@ -528,6 +536,14 @@
 		DE53D5FE2AB87210007FA841 /* BookmarkFilterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkFilterView.swift; sourceTree = "<group>"; };
 		DE53D5FF2AB87210007FA841 /* BookmarkFilterButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkFilterButton.swift; sourceTree = "<group>"; };
 		DE53D6002AB87210007FA841 /* BookmarkViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkViewModel.swift; sourceTree = "<group>"; };
+		DEA5361F2CDA292600154DEF /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
+		DEA536212CDA292600154DEF /* AnalyseCameraOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyseCameraOptionsView.swift; sourceTree = "<group>"; };
+		DEA536232CDA292600154DEF /* AnalyseCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyseCameraView.swift; sourceTree = "<group>"; };
+		DEA536242CDA292600154DEF /* AnalyseCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyseCameraViewController.swift; sourceTree = "<group>"; };
+		DEA5362A2CDA292D00154DEF /* AnalyseImageResizeOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyseImageResizeOptionsView.swift; sourceTree = "<group>"; };
+		DEA5362C2CDA292D00154DEF /* AnalyseImageResizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyseImageResizeView.swift; sourceTree = "<group>"; };
+		DEA5362D2CDA292D00154DEF /* AnalyseImageResizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyseImageResizeViewController.swift; sourceTree = "<group>"; };
+		DEA536342CDA293B00154DEF /* AnalyseScanAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyseScanAssembly.swift; sourceTree = "<group>"; };
 		DEC687FD2AC1643B00BCC83B /* SCReferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCReferencesViewController.swift; sourceTree = "<group>"; };
 		DEC688012AC1644400BCC83B /* SCReferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCReferencesView.swift; sourceTree = "<group>"; };
 		DECA039D2CD52B21005E7C38 /* OALConsultantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OALConsultantView.swift; sourceTree = "<group>"; };
@@ -1782,6 +1798,61 @@
 			path = Filter;
 			sourceTree = "<group>";
 		};
+		DEA536202CDA292600154DEF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DEA5361F2CDA292600154DEF /* CameraService.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		DEA536222CDA292600154DEF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DEA536212CDA292600154DEF /* AnalyseCameraOptionsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DEA536252CDA292600154DEF /* AnalyseCamera */ = {
+			isa = PBXGroup;
+			children = (
+				DEA536202CDA292600154DEF /* Utils */,
+				DEA536222CDA292600154DEF /* Views */,
+				DEA536242CDA292600154DEF /* AnalyseCameraViewController.swift */,
+				DEA536232CDA292600154DEF /* AnalyseCameraView.swift */,
+			);
+			path = AnalyseCamera;
+			sourceTree = "<group>";
+		};
+		DEA5362B2CDA292D00154DEF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DEA5362A2CDA292D00154DEF /* AnalyseImageResizeOptionsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DEA5362F2CDA292D00154DEF /* AnalyseImageResize */ = {
+			isa = PBXGroup;
+			children = (
+				DEA5362B2CDA292D00154DEF /* Views */,
+				DEA5362D2CDA292D00154DEF /* AnalyseImageResizeViewController.swift */,
+				DEA5362C2CDA292D00154DEF /* AnalyseImageResizeView.swift */,
+			);
+			path = AnalyseImageResize;
+			sourceTree = "<group>";
+		};
+		DEA536362CDA294100154DEF /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				DEA536252CDA292600154DEF /* AnalyseCamera */,
+				DEA5362F2CDA292D00154DEF /* AnalyseImageResize */,
+				DEA536342CDA293B00154DEF /* AnalyseScanAssembly.swift */,
+			);
+			path = Scan;
+			sourceTree = "<group>";
+		};
 		DEC687FC2AC1642400BCC83B /* SCReferences */ = {
 			isa = PBXGroup;
 			children = (
@@ -1893,6 +1964,7 @@
 		DEF7FC1B2CD8E07A006AC50C /* Chat */ = {
 			isa = PBXGroup;
 			children = (
+				DEA536362CDA294100154DEF /* Scan */,
 				DEF7FC0A2CD8E07A006AC50C /* Chat */,
 				DEF7FC1A2CD8E07A006AC50C /* Chats */,
 			);
@@ -2256,6 +2328,7 @@
 				DE38309A2AB4660900EA20E6 /* AnatomyGuideViewModel.swift in Sources */,
 				DE382F792AB31A9500EA20E6 /* NetworkError.swift in Sources */,
 				DE382FBB2AB31A9500EA20E6 /* IAPManager.swift in Sources */,
+				DEA536352CDA293B00154DEF /* AnalyseScanAssembly.swift in Sources */,
 				DE53D5F02AB86DD1007FA841 /* GetAnatomyBookmarksResponse.swift in Sources */,
 				DE3830892AB35E9A00EA20E6 /* GetAnatomyGuideNodeRequest.swift in Sources */,
 				DE382FCA2AB31A9500EA20E6 /* GetSymptomMedsResponse.swift in Sources */,
@@ -2304,6 +2377,10 @@
 				DE382F8B2AB31A9500EA20E6 /* PushNotificationsAuthorizationStatus.swift in Sources */,
 				DE382FD22AB31A9500EA20E6 /* GetBookmarksConditionsRequest.swift in Sources */,
 				DE38307A2AB35CBF00EA20E6 /* AnatomyGuideContent.swift in Sources */,
+				DEA536262CDA292600154DEF /* AnalyseCameraViewController.swift in Sources */,
+				DEA536272CDA292600154DEF /* AnalyseCameraView.swift in Sources */,
+				DEA536282CDA292600154DEF /* CameraService.swift in Sources */,
+				DEA536292CDA292600154DEF /* AnalyseCameraOptionsView.swift in Sources */,
 				DE382FDE2AB31A9500EA20E6 /* SettingsRouteCell.swift in Sources */,
 				DE382FCD2AB31A9500EA20E6 /* SymptomsCheckerResponse.swift in Sources */,
 				DE38301B2AB31A9500EA20E6 /* SymptomCheckerCollector.swift in Sources */,
@@ -2325,6 +2402,9 @@
 				DE3830222AB31A9500EA20E6 /* SCPersonalView.swift in Sources */,
 				DE38304A2AB31A9500EA20E6 /* DisclaimerView.swift in Sources */,
 				DE382FD02AB31A9500EA20E6 /* GetSymptomsResponse.swift in Sources */,
+				DEA536312CDA292D00154DEF /* AnalyseImageResizeOptionsView.swift in Sources */,
+				DEA536322CDA292D00154DEF /* AnalyseImageResizeViewController.swift in Sources */,
+				DEA536332CDA292D00154DEF /* AnalyseImageResizeView.swift in Sources */,
 				DE382F932AB31A9500EA20E6 /* FacebookManager.swift in Sources */,
 				DE382FFF2AB31A9500EA20E6 /* PaygateInfoCell.swift in Sources */,
 				DE382F872AB31A9500EA20E6 /* GradientView.swift in Sources */,
@@ -2487,11 +2567,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
-				DEVELOPMENT_TEAM = 2GY8CB289H;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Anatomy/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Access to the camera will help to recognize your request";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Access to the library will help to recognize your request";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -2501,13 +2583,14 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3.1;
-				PRODUCT_BUNDLE_IDENTIFIER = iphone.anatomy.dev;
+				MARKETING_VERSION = 1.4.0;
+				PRODUCT_BUNDLE_IDENTIFIER = iphone.anatomy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -2521,11 +2604,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
-				DEVELOPMENT_TEAM = 2GY8CB289H;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Anatomy/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Access to the camera will help to recognize your request";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Access to the library will help to recognize your request";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -2535,13 +2620,14 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3.1;
-				PRODUCT_BUNDLE_IDENTIFIER = iphone.anatomy.dev;
+				MARKETING_VERSION = 1.4.0;
+				PRODUCT_BUNDLE_IDENTIFIER = iphone.anatomy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

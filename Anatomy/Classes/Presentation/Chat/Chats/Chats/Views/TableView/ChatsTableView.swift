@@ -65,6 +65,16 @@ extension ChatsTableView: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         didSelectTrigger.accept(elements[indexPath.row])
     }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            didDeleteTrigger.accept(elements[indexPath.row])
+        }
+    }
 }
 
 // MARK: Private

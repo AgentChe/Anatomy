@@ -119,11 +119,11 @@ private extension SplashViewModel {
             return Single
                 .zip([
                     paygate,
-                    profile,
-                    symptoms,
-                    medicalStates,
-                    symptomMeds,
-                    anatomyGuide
+//                    profile,
+//                    symptoms,
+//                    medicalStates,
+//                    symptomMeds,
+//                    anatomyGuide
                 ])
                 .mapToVoid()
         }

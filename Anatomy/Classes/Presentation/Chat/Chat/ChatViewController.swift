@@ -9,6 +9,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 import Toast_Swift
+import PhotosUI
 
 final class ChatViewController: UIViewController {
     private lazy var mainView = ChatView()
@@ -20,6 +21,7 @@ final class ChatViewController: UIViewController {
     private lazy var historyButton = UIButton()
     
     private lazy var didSelectChatFromHistoryTrigger = PublishRelay<Chat>()
+    private lazy var didAddedImageTrigger = PublishRelay<UIImage>()
     
     override func loadView() {
         view = mainView
@@ -46,7 +48,13 @@ final class ChatViewController: UIViewController {
             })
             .disposed(by: disposeBag)
         
-        let didSendMessage = mainView.inputField
+        mainView.addFileButton.rx.tap
+            .bind(to: Binder(self) { base, void in
+                base.selectFileSource()
+            })
+            .disposed(by: disposeBag)
+        
+        let didSendTextMessage = mainView.inputField
             .sendButton.rx.tap
             .withLatestFrom(mainView.inputField.textField.rx.text)
             .compactMap { message -> ChatViewModel.DataForSendMessage? in
@@ -54,6 +62,21 @@ final class ChatViewController: UIViewController {
                 return (nil, message)
             }
             .asSignal(onErrorSignalWith: .never())
+        let didSendTextImageMessage = didAddedImageTrigger
+            .withLatestFrom(mainView.inputField.textField.rx.text) { ($0, $1) }
+            .compactMap { args -> ChatViewModel.DataForSendMessage? in
+                let (image, message) = args
+                
+                guard let message, !message.isEmpty else { return nil }
+                return (image, message)
+            }
+            .asSignal(onErrorSignalWith: .never())
+        let didSendMessage = Signal
+            .merge(
+                didSendTextMessage,
+                didSendTextImageMessage
+            )
+        
         let didTapRegenerate = mainView.regenerateView
             .regenerateButton.rx.tap.asSignal()
             .withLatestFrom(didSendMessage)
@@ -65,7 +88,11 @@ final class ChatViewController: UIViewController {
             didSendMessage: didSendMessage,
             didTapRegenerate: didTapRegenerate,
             didTapCopy: mainView.tableView.didCopy,
-            didTapRefresh: mainView.tableView.didRefresh
+            didTapRefresh: mainView.tableView.didRefresh,
+            didInputText: mainView.inputField
+                .textField.rx.text
+                .map { $0 ?? "" }
+                .asSignal(onErrorSignalWith: .never())
         ))
         
         output.route
@@ -79,6 +106,13 @@ final class ChatViewController: UIViewController {
                 base.action(action)
             })
             .disposed(by: disposeBag)
+        
+        output.lockAddFile
+            .drive(Binder(mainView.addFileButton) { base, lock in
+                base.isEnabled = !lock
+                base.alpha = lock ? 0.5 : 1
+            })
+            .disposed(by: disposeBag)
     }
 }
 
@@ -89,6 +123,27 @@ extension ChatViewController {
         vc.navigationItem.title = "Chat.Title".localized
         vc.navigationItem.backButtonTitle = " "
         return vc
+    }
+}
+
+// MARK: PHPickerViewControllerDelegate
+extension ChatViewController: PHPickerViewControllerDelegate {
+    func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
+        picker.dismiss(animated: true)
+        
+        let itemProvider = results
+            .map (\.itemProvider)
+            .filter { $0.canLoadObject(ofClass: UIImage.self) }
+            .first
+        guard let itemProvider else { return }
+        
+        itemProvider.loadObject(ofClass: UIImage.self) { image, error in
+            if let image = image as? UIImage {
+                DispatchQueue.main.async { [weak self] in
+                    self?.didAddedImageTrigger.accept(image)
+                }
+            }
+        }
     }
 }
 
@@ -158,5 +213,38 @@ private extension ChatViewController {
         historyButton.setImage(UIImage(named: "Chat.History"), for: .normal)
         
         navigationItem.rightBarButtonItem = historyItem
+    }
+    
+    func selectFileSource() {
+        let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        
+        let galleryAction = UIAlertAction(title: "Chat.FileSource.Gallery".localized, style: .default) { [weak self] action in
+            guard let self else { return }
+            
+            var configuration = PHPickerConfiguration()
+            configuration.filter = .images
+            configuration.selectionLimit = 1
+            configuration.preferredAssetRepresentationMode = .automatic
+            
+            let picker = PHPickerViewController(configuration: configuration)
+            picker.delegate = self
+            
+            present(picker, animated: true)
+        }
+        alert.addAction(galleryAction)
+        
+        let cameraAction = UIAlertAction(title: "Chat.FileSource.Camera".localized, style: .default) { [weak self] action in
+            guard let self else { return }
+            
+            AnalyseScanAssembly().scan(from: self) { [weak self] image in
+                self?.didAddedImageTrigger.accept(image)
+            }
+        }
+        alert.addAction(cameraAction)
+        
+        let cancel = UIAlertAction(title: "Cancel".localized, style: .cancel)
+        alert.addAction(cancel)
+        
+        present(alert, animated: true)
     }
 }
