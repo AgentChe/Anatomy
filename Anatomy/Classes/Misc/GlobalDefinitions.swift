@@ -22,8 +22,6 @@ final class GlobalDefinitions {
     static let privacyPolicyUrl = "https://toiboto.com/policy"
     static let contactUsUrl = "https://toiboto.com/#contact_us"
     
-    static let XORKey = "qwGggpUcm6CZ"
-    
     enum Paygate {
         static let defaultLifetime = "mobile.anatomy.lifetime"
         static let defaultMonthly = "mobile.anatomy.monthly"
