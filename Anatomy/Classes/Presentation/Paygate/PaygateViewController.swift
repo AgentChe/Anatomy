@@ -27,8 +27,6 @@ final class PaygateViewController: UIViewController {
         AmplitudeManager.shared
             .logEvent(name: "Paygate Screen", parameters: [:])
         
-        RequestReview.requestIfNeeded()
-        
         viewModel.questionsCount
             .drive(Binder(mainView) { base, questionsCount in
                 base.setup(questionsCount: questionsCount)
