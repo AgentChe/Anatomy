@@ -36,7 +36,6 @@
 		DE382F7C2AB31A9500EA20E6 /* RequestReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE382E132AB31A9500EA20E6 /* RequestReview.swift */; };
 		DE382F7D2AB31A9500EA20E6 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE382E142AB31A9500EA20E6 /* ImagePicker.swift */; };
 		DE382F7E2AB31A9500EA20E6 /* RxActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE382E152AB31A9500EA20E6 /* RxActivityIndicator.swift */; };
-		DE382F7F2AB31A9500EA20E6 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE382E162AB31A9500EA20E6 /* Toast.swift */; };
 		DE382F802AB31A9500EA20E6 /* NavigationControllerSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE382E192AB31A9500EA20E6 /* NavigationControllerSettings.swift */; };
 		DE382F812AB31A9500EA20E6 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE382E1A2AB31A9500EA20E6 /* NavigationController.swift */; };
 		DE382F822AB31A9500EA20E6 /* TapAreaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE382E1B2AB31A9500EA20E6 /* TapAreaButton.swift */; };
@@ -328,7 +327,6 @@
 		DE382E132AB31A9500EA20E6 /* RequestReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestReview.swift; sourceTree = "<group>"; };
 		DE382E142AB31A9500EA20E6 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		DE382E152AB31A9500EA20E6 /* RxActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxActivityIndicator.swift; sourceTree = "<group>"; };
-		DE382E162AB31A9500EA20E6 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		DE382E192AB31A9500EA20E6 /* NavigationControllerSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerSettings.swift; sourceTree = "<group>"; };
 		DE382E1A2AB31A9500EA20E6 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		DE382E1B2AB31A9500EA20E6 /* TapAreaButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapAreaButton.swift; sourceTree = "<group>"; };
@@ -751,7 +749,6 @@
 				DE382E132AB31A9500EA20E6 /* RequestReview.swift */,
 				DE382E142AB31A9500EA20E6 /* ImagePicker.swift */,
 				DE382E152AB31A9500EA20E6 /* RxActivityIndicator.swift */,
-				DE382E162AB31A9500EA20E6 /* Toast.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -2129,9 +2126,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Anatomy/Pods-Anatomy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Anatomy/Pods-Anatomy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -2251,7 +2252,6 @@
 				DE382FE02AB31A9500EA20E6 /* SettingsViewController.swift in Sources */,
 				DE382FFC2AB31A9500EA20E6 /* PaygateView.swift in Sources */,
 				DE3830052AB31A9500EA20E6 /* SelectUnitEmptyView.swift in Sources */,
-				DE382F7F2AB31A9500EA20E6 /* Toast.swift in Sources */,
 				DE382FC72AB31A9500EA20E6 /* SymtomsCheckerBlock.swift in Sources */,
 				DE382F662AB31A9500EA20E6 /* UIDevice+Extension.swift in Sources */,
 				DE53D60A2AB87210007FA841 /* BookmarkFilterButton.swift in Sources */,
@@ -2569,7 +2569,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 10;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 2MYAP2M337;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -2585,7 +2585,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.5.3;
+				MARKETING_VERSION = 1.5.4;
 				PRODUCT_BUNDLE_IDENTIFIER = iphone.anatomy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2609,7 +2609,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 10;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 2MYAP2M337;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -2625,7 +2625,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.5.3;
+				MARKETING_VERSION = 1.5.4;
 				PRODUCT_BUNDLE_IDENTIFIER = iphone.anatomy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

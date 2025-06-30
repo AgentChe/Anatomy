@@ -5,11 +5,11 @@ use_frameworks!
 source 'https://github.com/CocoaPods/Specs.git'
 
 target 'Anatomy' do
-  pod 'NotificationBannerSwift'
   pod 'Toast-Swift'
   pod 'Kingfisher'
   pod 'Mantis'
   pod 'lottie-ios'
+  pod 'Toast-Swift'
   
   pod 'RxSwift'
   pod 'RxCocoa'
